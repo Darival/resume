@@ -1,0 +1,108 @@
+article {
+    max-width: 1000px;
+    padding: 50px;
+    margin:  0 auto;
+    box-shadow: 3px 7px 16px -5px black;
+}
+
+h2 {
+    font-size: 14px;
+    text-align: center;
+}
+
+h1, h2, ul, p {
+    margin: 5px;
+}
+
+.resume {
+    font-size: 14px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "name"
+    "contact"
+    "education"
+    "work"
+    "projects"
+    "skills"
+    "awards";
+}
+
+@media (min-width: 800px) {
+    h2 {
+        text-align: left;
+    }
+    .resume {
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: repeat(6, auto);
+        grid-template-areas: 
+        "name contact ."
+        "education education education"
+        "work work work"
+        "projects projects projects"
+        "skills skills skills"
+        "awards awards awards";
+    }
+}
+
+.name {
+    grid-area: name;
+    text-align: center;
+}
+
+.contact {
+    grid-area: contact;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.contact > a{
+    min-width: 100px;
+    margin: 3px;
+}
+
+.awards {
+    grid-area: awards;
+}
+
+.work {
+    grid-area: work;
+}
+
+.education {
+    grid-area: education;
+}
+
+.projects {
+    grid-area: projects;
+}
+
+.skills {
+    grid-area: skills;
+}
+
+.skills > .tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills > .tags > div{
+    color: #39739d;
+    background-color: #e1ecf4;
+    padding: 2px 3px;
+    margin:  2px 2px;
+    border-radius: 2px;
+}
+
+.moment {
+}
+
+
+@media (min-width: 800px) {
+    .moment {
+        display: grid;
+        grid-template-columns: 140px 1fr;
+    }
+}
