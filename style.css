@@ -10,7 +10,7 @@ body {
 
 article {
   max-width: 21cm;
-  padding: 50px;
+  padding: 2em;
   margin: 0 auto;
   background: white;
 }
@@ -40,24 +40,7 @@ p {
     "skills"
     "awards";
   box-shadow: 1px 1px 20px -15px;
-}
-
-@media (min-width: 800px) {
-  h2 {
-    text-align: left;
-  }
-  .resume {
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: repeat(7, auto);
-    grid-template-areas:
-      ". name ."
-      "contact contact contact"
-      "education education education"
-      "work work work"
-      "projects projects projects"
-      "skills skills skills"
-      "awards awards awards";
-  }
+  margin: 1em;
 }
 
 .name {
@@ -112,10 +95,24 @@ p {
   border-radius: 2px;
 }
 
-.moment {
-}
-
 @media (min-width: 800px) {
+  h2 {
+    text-align: left;
+  }
+  .resume {
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: repeat(7, auto);
+    grid-template-areas:
+      ". name ."
+      "contact contact contact"
+      "education education education"
+      "work work work"
+      "projects projects projects"
+      "skills skills skills"
+      "awards awards awards";
+    padding: 50px;
+  }
+
   .moment {
     display: grid;
     grid-template-columns: 140px 1fr;
