@@ -38,9 +38,10 @@ h1, h2, ul, p {
     }
     .resume {
         grid-template-columns: 1fr 2fr 1fr;
-        grid-template-rows: repeat(6, auto);
+        grid-template-rows: repeat(7, auto);
         grid-template-areas: 
-        "name contact ."
+        ". name ."
+        "contact contact contact"
         "education education education"
         "work work work"
         "projects projects projects"
@@ -60,6 +61,7 @@ h1, h2, ul, p {
     flex-flow: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin: 1em 0;
 }
 .contact > a{
     min-width: 100px;
