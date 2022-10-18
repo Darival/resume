@@ -35,9 +35,9 @@ p {
     "name"
     "contact"
     "education"
+    "skills"
     "work"
     "projects"
-    "skills"
     "awards";
   box-shadow: 1px 1px 20px -15px;
   margin: 1em;
@@ -105,10 +105,10 @@ p {
     grid-template-areas:
       ". name ."
       "contact contact contact"
+      "skills skills skills"
       "education education education"
       "work work work"
       "projects projects projects"
-      "skills skills skills"
       "awards awards awards";
     padding: 50px;
   }
