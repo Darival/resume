@@ -34,8 +34,8 @@ p {
   grid-template-areas:
     "name"
     "contact"
-    "education"
     "skills"
+    "education"
     "work"
     "projects"
     "awards";
@@ -104,8 +104,8 @@ p {
     grid-template-rows: repeat(7, auto);
     grid-template-areas:
       ". name ."
-      "contact contact contact"
       "skills skills skills"
+      "contact contact contact"
       "education education education"
       "work work work"
       "projects projects projects"
