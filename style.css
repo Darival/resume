@@ -54,7 +54,7 @@ p {
   flex-flow: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin: 1em 0;
+  margin: 0em 0;
 }
 .contact > a {
   min-width: 100px;
@@ -104,8 +104,8 @@ p {
     grid-template-rows: repeat(7, auto);
     grid-template-areas:
       ". name ."
-      "skills skills skills"
       "contact contact contact"
+      "skills skills skills"
       "education education education"
       "work work work"
       "projects projects projects"
@@ -116,5 +116,8 @@ p {
   .moment {
     display: grid;
     grid-template-columns: 140px 1fr;
+  }
+  .moment > .about {
+    grid-column: 1 / -1;
   }
 }
