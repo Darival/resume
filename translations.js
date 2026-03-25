@@ -10,7 +10,6 @@ window.SITE_TRANSLATIONS = {
       ctaTalk: "Hablemos",
       ctaEmail: "Escríbeme",
       ctaOpenResume: "Abrir CV",
-      labelCurrentProfile: "Perfil actual",
       labelContact: "Contacto",
       labelLocation: "Ubicación",
       labelFocus: "Enfoque",
@@ -23,8 +22,6 @@ window.SITE_TRANSLATIONS = {
       labelExperience: "Experiencia",
       labelResumeBadge: "CV / Resume",
       heroBadge: "IA, automatización industrial y software a medida",
-      currentProfileLead: "Desarrollo soluciones donde una API por sí sola no basta: sensores, cámaras, lógica de control, apps y automatización conectados en un mismo sistema.",
-      currentProfileBody: "Desde software para operación hasta electrónica de campo, me enfoco en sistemas útiles, desplegables y mantenibles.",
       footerLead: "Si tienes un proyecto raro, técnico o difícil de explicar, probablemente es justo el tipo de proyecto que más me gusta.",
       footerEmail: "Escríbeme",
       metaThemeColor: "#071412"
@@ -96,7 +93,6 @@ window.SITE_TRANSLATIONS = {
       ctaTalk: "Let's talk",
       ctaEmail: "Email me",
       ctaOpenResume: "Open resume",
-      labelCurrentProfile: "Current profile",
       labelContact: "Contact",
       labelLocation: "Location",
       labelFocus: "Focus",
@@ -109,8 +105,6 @@ window.SITE_TRANSLATIONS = {
       labelExperience: "Experience",
       labelResumeBadge: "CV / Resume",
       heroBadge: "AI, industrial automation, and custom software",
-      currentProfileLead: "I build solutions where an API alone is not enough: sensors, cameras, control logic, apps, and automation working together in a single system.",
-      currentProfileBody: "From operational software to field electronics, I focus on systems that are useful, deployable, and maintainable.",
       footerLead: "If you have a project that is unusual, highly technical, or hard to explain, it is probably exactly the kind of work I enjoy most.",
       footerEmail: "Email me",
       metaThemeColor: "#071412"
