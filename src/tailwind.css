@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Space Grotesk", "Segoe UI", sans-serif;
+  --font-body: "Manrope", "Segoe UI", sans-serif;
+  --color-ink: #101828;
+  --color-slate: #475467;
+  --color-mist: #f5f7f4;
+  --color-panel: #fffef9;
+  --color-line: rgba(16, 24, 40, 0.1);
+  --color-accent: #0f766e;
+  --color-accent-soft: #ccfbf1;
+  --color-warm: #c2410c;
+  --shadow-card: 0 18px 60px rgba(16, 24, 40, 0.08);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-body);
+    color: var(--color-ink);
+    background:
+      radial-gradient(circle at top left, rgba(15, 118, 110, 0.14), transparent 30%),
+      radial-gradient(circle at top right, rgba(194, 65, 12, 0.12), transparent 24%),
+      linear-gradient(180deg, #f8fbf9 0%, #eef2ef 100%);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    letter-spacing: -0.03em;
+  }
+
+  a {
+    transition: color 160ms ease, border-color 160ms ease, background-color 160ms ease, opacity 160ms ease;
+  }
+
+  ::selection {
+    background: rgba(15, 118, 110, 0.18);
+  }
+}
+
+@layer components {
+  .shell {
+    @apply mx-auto w-full max-w-7xl px-6 sm:px-8 lg:px-10;
+  }
+
+  .language-toggle {
+    @apply inline-flex items-center gap-1 rounded-full border border-black/10 bg-white/75 p-1 text-sm backdrop-blur;
+  }
+
+  .language-toggle button {
+    @apply rounded-full px-3 py-1.5 text-slate-600;
+  }
+
+  .language-toggle button[aria-pressed="true"] {
+    @apply bg-slate-950 text-white;
+  }
+
+  .eyebrow {
+    @apply inline-flex rounded-full border border-teal-800/10 bg-teal-50 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-teal-800;
+  }
+
+  .hero-card {
+    @apply relative overflow-hidden rounded-4xl border border-black/8 bg-[rgba(255,254,249,0.88)] shadow-card backdrop-blur;
+  }
+
+  .section-card {
+    @apply rounded-[1.75rem] border border-black/8 bg-white/80 shadow-[0_12px_40px_rgba(16,24,40,0.05)] backdrop-blur;
+  }
+
+  .pill {
+    @apply inline-flex items-center rounded-full border border-black/8 bg-white px-3 py-1 text-sm text-slate-700;
+  }
+
+  .nav-link {
+    @apply text-sm font-medium text-slate-600 hover:text-slate-950;
+  }
+
+  .button-primary {
+    @apply inline-flex items-center justify-center rounded-full bg-slate-950 px-5 py-3 text-sm font-semibold text-white hover:bg-teal-800;
+  }
+
+  .button-secondary {
+    @apply inline-flex items-center justify-center rounded-full border border-black/10 bg-white px-5 py-3 text-sm font-semibold text-slate-900 hover:border-slate-950 hover:bg-slate-50;
+  }
+
+  .stat-card {
+    @apply rounded-[1.4rem] border border-black/8 bg-white/90 p-5;
+  }
+
+  .resume-block {
+    @apply rounded-3xl border border-black/8 bg-white p-6;
+  }
+
+  .timeline-item {
+    @apply grid gap-4 rounded-[1.25rem] border border-black/8 bg-white/80 p-5 lg:grid-cols-[160px_1fr];
+  }
+
+  .timeline-date {
+    @apply text-sm font-semibold uppercase tracking-[0.14em] text-slate-500;
+  }
+
+  .lang-only[hidden] {
+    display: none !important;
+  }
+}

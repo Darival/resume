@@ -1,171 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>César René Contreras Villegas - Resume</title>
+    <title>Cesar Rene Contreras Villegas | AI + Industrial Automation</title>
+    <meta name="description" content="AI systems, industrial automation, electronics, mobile apps, and custom software by Cesar Rene Contreras Villegas.">
+    <meta name="theme-color" content="#0f766e">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
 </head>
 
-<body>
-    <article class="resume">
-        <section class="name">
-            <h1>César René Contreras Villegas</h1>
-        </section>
-        <section class="contact">
-            <a href="mailto:">hi@cerco.dev</a>
-            <a href="tel:+52 1 (811)-125-3709">+52 1 (811)-125-3709</a>
-            <a href="https://cerco.dev">cerco.dev</a>
-            <a href="https://github.com/Darival">Github Darival</a>
-        </section>
-        <section class="skills">
-            <h2>SKILLS</h2>
-            <div class="tags">
-                <div>Node.js</div>
-                <div>PHP</div>
-                <div>Reactjs</div>
-                <div>Flutter</div>
-                <div>Webpack</div>
-                <div>Javascript</div>
-                <div>Typescript</div>
-                <div>Graphql</div>
-                <div>MySQL</div>
-                <div>Amazon WS</div>
-                <div>Google CC</div>
-                <div>Sass</div>
-                <div>Linux</div>
-                <div>Html</div>
-                <div>Css</div>
-                <div>Nginx</div>
-                <div>Apache</div>
-                <div>Git</div>
-                <div>Security</div>
-                <div>Figma</div>
+<body class="min-h-screen">
+    <header class="shell py-6 sm:py-8">
+        <div class="flex flex-col gap-4 rounded-full border border-black/8 bg-white/70 px-5 py-4 backdrop-blur lg:flex-row lg:items-center lg:justify-between">
+            <a href="index.html" class="font-display text-sm font-bold uppercase tracking-[0.22em] text-slate-950">Cerco.dev</a>
+            <nav class="flex flex-wrap items-center gap-4 text-sm">
+                <a href="#services" class="nav-link"><span class="lang-only" data-lang="es">Servicios</span><span class="lang-only" data-lang="en">Services</span></a>
+                <a href="#contact" class="nav-link"><span class="lang-only" data-lang="es">Contacto</span><span class="lang-only" data-lang="en">Contact</span></a>
+                <a href="cv.html" class="nav-link"><span class="lang-only" data-lang="es">CV</span><span class="lang-only" data-lang="en">Resume</span></a>
+            </nav>
+            <div class="flex flex-wrap items-center gap-3">
+                <div class="language-toggle" data-language-toggle>
+                    <button type="button" data-lang="es" aria-pressed="false">ES</button>
+                    <button type="button" data-lang="en" aria-pressed="false">EN</button>
+                </div>
+                <a href="mailto:hi@cerco.dev" class="button-primary"><span class="lang-only" data-lang="es">Hablemos</span><span class="lang-only" data-lang="en">Let&apos;s talk</span></a>
             </div>
-        </section>
-        <section class="education">
-            <h2>EDUCATION</h2>
-            <div>
-                <b>TECNOLÓGICO DE MONTERREY (ITESM), Campus Monterrey</b><br>
-                <span>Bachelor in Mechatronics Engineering - Dropout</span>
-            </div>
-        </section>
-        <section class="work">
-            <h2>EXPERIENCE</h2>
-            <div class="moment">
-                <span class="date">
-                    March 2021 - Present
-                </span>
-                <div class="title">
-                    <b>Senior software engineer at Terminal Logistics</b>&nbsp<span>Monterrey, Nuevo León, México</span>
+        </div>
+    </header>
+
+    <main class="shell pb-12 sm:pb-16 lg:pb-24">
+        <section class="hero-card px-6 py-8 sm:px-8 sm:py-10 lg:px-12 lg:py-14">
+            <div class="absolute inset-x-0 top-0 h-40 bg-[radial-gradient(circle_at_top,rgba(15,118,110,0.18),transparent_60%)]"></div>
+            <div class="relative grid gap-10 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
+                <div class="space-y-6">
+                    <span class="eyebrow"><span class="lang-only" data-lang="es">AI, automatizacion industrial y software a medida</span><span class="lang-only" data-lang="en">AI, industrial automation, and custom software</span></span>
+                    <div class="space-y-4">
+                        <h1 class="max-w-4xl text-4xl font-bold tracking-[-0.05em] text-slate-950 sm:text-5xl lg:text-7xl"><span class="lang-only" data-lang="es">Construyo sistemas que conectan AI, hardware y operacion real.</span><span class="lang-only" data-lang="en">I build systems that connect AI, hardware, and real-world operations.</span></h1>
+                        <p class="max-w-3xl text-lg leading-8 text-slate-600 sm:text-xl"><span class="lang-only" data-lang="es">Trabajo en integraciones con LLMs, agentes, aplicaciones MCP, vision artificial, electronica y apps moviles o web para resolver problemas concretos de negocio e ingenieria.</span><span class="lang-only" data-lang="en">I work across LLM integrations, agents, MCP applications, computer vision, electronics, and mobile or web apps to solve concrete business and engineering problems.</span></p>
+                    </div>
+
+                    <div class="flex flex-wrap gap-3 text-sm text-slate-700">
+                        <span class="pill"><span class="lang-only" data-lang="es">Agentes e integraciones con ChatGPT API</span><span class="lang-only" data-lang="en">Agents and ChatGPT API integrations</span></span>
+                        <span class="pill"><span class="lang-only" data-lang="es">Vision artificial para seguridad industrial</span><span class="lang-only" data-lang="en">Computer vision for industrial safety</span></span>
+                        <span class="pill"><span class="lang-only" data-lang="es">Diseno de circuitos y controladoras</span><span class="lang-only" data-lang="en">Circuit design and controller boards</span></span>
+                    </div>
+
+                    <div class="flex flex-wrap gap-3">
+                        <a href="mailto:hi@cerco.dev" class="button-primary"><span class="lang-only" data-lang="es">¿Tienes un proyecto? Platiquemolo</span><span class="lang-only" data-lang="en">Have a project? Let&apos;s talk</span></a>
+                        <a href="cv.html" class="button-secondary"><span class="lang-only" data-lang="es">Ver CV completo</span><span class="lang-only" data-lang="en">View full resume</span></a>
+                    </div>
                 </div>
-                <div class="about">
-                    <ul>
-                        <li>Developing software solutions by studying information needs, conferring with users, studying systems flow, data usage, and work processes; investigating problem areas; and following the software development lifecycle.</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="moment">
-                <span class="date">
-                    June 2017 - Present
-                </span>
-                <div class="content">
-                    <b>Full stack developer</b>&nbsp<span>Freelance</span>
-                </div>
-                
-                <div class="about">
-                    <ul>
-                        <li>Understanding business/functional requirements from clients in various indstries to develop
-                            technical application specifications.</li>
-                        <li>Development, integration and/or migration of client functional specifications and systems.
-                        </li>
-                        <li>Keep track of current trends in techhnology developments and standards.</li>
-                        <li>Delivering valuable advice and guidance to clients in the use of technology.</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="moment">
-                <span class="date">
-                    Jan 2016 - Dec 2019
-                </span>
-                <div class="content">
-                    <b>Full stack developer at Capio Technologies</b>&nbsp<span>San Pedro, Nuevo León, México</span>
-                </div>
-                <div class="about">
-                    <ul>
-                        <li>PHP backend development on educational online plataform.</li>
-                        <li>Frontend development using Vue.js to build web aplications.</li>
-                        <li>Implemented Test-driven development across the plataform with PHPUnit and Selenium.</li>
-                        <li>Migration from an outdated app foundation to a state-of-the-art webpack config, achieving full PWA status.</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="moment">
-                <span class="date">
-                    Feb 2016 - Feb 2017
-                </span>
-                <div class="content">
-                    <b>YoConstruyo</b>&nbsp<span>(Internship with CEMEX)</span>
-                </div>
-                <div class="about">
-                    <ul>
-                        <li>Developed a mobile app and website that helps low-income families learn how to
-                            build/maintain their homes.</li>
-                        <li>iOS/Android app with Ionic and the website with Laravel.</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="moment">
-                <span class="date">
-                    May 2015 - Aug 2015
-                </span>
-                <div class="content">
-                    <b>Software Developer Intern at AUPA</b>&nbsp<span>Monterrey, Nuevo León, México</span>
-                </div>
-                <div class="about">
-                    <ul>
-                        <li>C# .NET Desktop development.</li>
-                        <li>
-                            Developed event monitoring system with cameras for production line.
-                        </li>
-                        <li>
-                            Fast prototyping of IoT services.
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="moment">
-                <span class="date">
-                    Apr 2014 - Apr 2015
-                </span>
-                <div class="content">
-                    <b>Project Engineering Intern at Patmon</b>&nbsp<span>Monterrey, Nuevo León, México</span>
-                </div>
-                <div class="about">
-                    <ul>
-                        <li>Delevoped control software for production and manufacturing Automation.</li>
-                        <li>
-                            Computer Assisted Drawing (CAD) with SolidWorks to design manfacturing equipment.
-                        </li>
-                        <li>
-                            Developed in-house PLC system for custom line production equipment.
-                        </li>
-                    </ul>
+
+                <div class="grid gap-5 sm:grid-cols-[auto_1fr] lg:grid-cols-1">
+                    <div class="justify-self-center lg:justify-self-end">
+                        <div class="relative mx-auto w-32 sm:w-36 lg:w-40">
+                            <div class="absolute -inset-2 rounded-full bg-[radial-gradient(circle,rgba(15,118,110,0.22),transparent_68%)] blur-md"></div>
+                            <img src="avatar.jpg" alt="Portrait of Cesar Rene Contreras Villegas" class="relative aspect-square w-full rounded-full border border-white/70 object-cover shadow-[0_16px_50px_rgba(16,24,40,0.18)]">
+                        </div>
+                    </div>
+                    <div class="stat-card space-y-4">
+                        <p class="text-sm font-semibold uppercase tracking-[0.16em] text-slate-500"><span class="lang-only" data-lang="es">Perfil actual</span><span class="lang-only" data-lang="en">Current profile</span></p>
+                        <div class="space-y-3 text-sm leading-7 text-slate-700 sm:text-base">
+                            <p><span class="lang-only" data-lang="es">Desarrollo soluciones donde una API sola no basta: sensores, camaras, logica de control, apps y automatizacion conectados en un mismo sistema.</span><span class="lang-only" data-lang="en">I build solutions where an API alone is not enough: sensors, cameras, control logic, apps, and automation connected inside one system.</span></p>
+                            <p><span class="lang-only" data-lang="es">Desde software para operacion hasta electronica de campo, me enfoco en sistemas utiles, desplegables y mantenibles.</span><span class="lang-only" data-lang="en">From operational software to field electronics, I focus on systems that are useful, deployable, and maintainable.</span></p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        <section class="awards">
-            <h2>AWARDS</h2>
-            <ul>
-                <li>2nd Place Team at Mpower's Xcavator Event 2014.</li>
-                <li>1st Place Team at CEMEX’s app development challenge at HackMTY’s 2016 hackathon. </li>
-                <li>1st Prize Major League Hacking challenge on HackMty 2017.</li>
-                <li>2nd place of 2016 Google’s Liquid Galaxy Hackathon in ITESM Campus.</li>
-            </ul>
+
+        <section id="services" class="grid gap-4 py-8 sm:gap-6 sm:py-10 lg:grid-cols-3 lg:py-14">
+            <article class="section-card p-6 sm:p-7">
+                <p class="mb-3 text-sm font-semibold uppercase tracking-[0.16em] text-teal-700">AI systems</p>
+                <h2 class="text-2xl font-bold text-slate-950"><span class="lang-only" data-lang="es">Agentes, LLMs y automatizacion inteligente</span><span class="lang-only" data-lang="en">Agents, LLMs, and intelligent automation</span></h2>
+                <p class="mt-4 text-base leading-7 text-slate-600"><span class="lang-only" data-lang="es">Integraciones con ChatGPT API, agentes de trabajo, herramientas MCP y flujos automatizados que conectan procesos internos, datos y operaciones.</span><span class="lang-only" data-lang="en">ChatGPT API integrations, working agents, MCP tooling, and automated flows that connect internal processes, data, and operations.</span></p>
+            </article>
+
+            <article class="section-card p-6 sm:p-7">
+                <p class="mb-3 text-sm font-semibold uppercase tracking-[0.16em] text-orange-700">Industrial</p>
+                <h2 class="text-2xl font-bold text-slate-950"><span class="lang-only" data-lang="es">Vision artificial, control y electronica aplicada</span><span class="lang-only" data-lang="en">Computer vision, control, and applied electronics</span></h2>
+                <p class="mt-4 text-base leading-7 text-slate-600"><span class="lang-only" data-lang="es">Sistemas de seguridad para montacargas, deteccion de riesgos con camaras y DVR, y tarjetas controladoras disenadas para interactuar con el mundo fisico.</span><span class="lang-only" data-lang="en">Forklift safety systems, risk detection with cameras and DVRs, and controller boards designed to interact with the physical world.</span></p>
+            </article>
+
+            <article class="section-card p-6 sm:p-7">
+                <p class="mb-3 text-sm font-semibold uppercase tracking-[0.16em] text-slate-500">Product</p>
+                <h2 class="text-2xl font-bold text-slate-950"><span class="lang-only" data-lang="es">Apps, APIs y plataformas de operacion</span><span class="lang-only" data-lang="en">Apps, APIs, and operational platforms</span></h2>
+                <p class="mt-4 text-base leading-7 text-slate-600"><span class="lang-only" data-lang="es">Aplicaciones moviles para iOS y Android, sistemas web, pagos con Stripe, facturacion SAT e integraciones con WhatsApp para automatizar procesos reales.</span><span class="lang-only" data-lang="en">Mobile apps for iOS and Android, web systems, Stripe payments, SAT invoicing, and WhatsApp integrations that automate real processes.</span></p>
+            </article>
         </section>
-    </article>
+
+        <section class="grid gap-4 lg:grid-cols-[1.2fr_0.8fr]">
+            <article class="section-card p-6 sm:p-8">
+                <span class="eyebrow mb-5"><span class="lang-only" data-lang="es">Lo que hago hoy</span><span class="lang-only" data-lang="en">What I do today</span></span>
+                <div class="space-y-5 text-base leading-8 text-slate-700">
+                    <p><span class="lang-only" data-lang="es">Me interesa trabajar en proyectos donde software, automatizacion y hardware se cruzan. Si el problema requiere disenar la API, la app, la logica y tambien la tarjeta controladora, ese tipo de reto me queda muy natural.</span><span class="lang-only" data-lang="en">I like working on projects where software, automation, and hardware intersect. If the problem requires designing the API, the app, the control logic, and the controller board, that kind of challenge fits me naturally.</span></p>
+                    <p><span class="lang-only" data-lang="es">No vendo una lista generica de tecnologias. Me enfoco en resolver sistemas completos: desde una experiencia de usuario limpia hasta una integracion industrial que tiene que funcionar en campo.</span><span class="lang-only" data-lang="en">I do not sell a generic list of technologies. I focus on solving complete systems: from a clean user experience to an industrial integration that must work in the field.</span></p>
+                </div>
+            </article>
+
+            <aside class="section-card p-6 sm:p-8" id="contact">
+                <span class="eyebrow mb-5"><span class="lang-only" data-lang="es">Contacto</span><span class="lang-only" data-lang="en">Contact</span></span>
+                <div class="space-y-4 text-base text-slate-700">
+                    <a href="mailto:hi@cerco.dev" class="block rounded-2xl border border-black/8 bg-white px-4 py-4 hover:border-slate-950"><div class="text-sm uppercase tracking-[0.14em] text-slate-500">Email</div><div class="mt-1 font-semibold text-slate-950">hi@cerco.dev</div></a>
+                    <a href="tel:+5218111253709" class="block rounded-2xl border border-black/8 bg-white px-4 py-4 hover:border-slate-950"><div class="text-sm uppercase tracking-[0.14em] text-slate-500"><span class="lang-only" data-lang="es">Telefono</span><span class="lang-only" data-lang="en">Phone</span></div><div class="mt-1 font-semibold text-slate-950">+52 1 811 125 3709</div></a>
+                    <a href="https://cerco.dev" class="block rounded-2xl border border-black/8 bg-white px-4 py-4 hover:border-slate-950">cerco.dev</a>
+                    <a href="https://github.com/Darival" class="block rounded-2xl border border-black/8 bg-white px-4 py-4 hover:border-slate-950">github.com/Darival</a>
+                </div>
+            </aside>
+        </section>
+
+        <section class="py-8 sm:py-10 lg:py-14">
+            <div class="hero-card px-6 py-8 text-center sm:px-10 sm:py-10">
+                <p class="mx-auto max-w-3xl text-2xl font-bold text-slate-950 sm:text-4xl"><span class="lang-only" data-lang="es">Si tienes un proyecto raro, tecnico o dificil de explicar, probablemente es de los que mas me gustan.</span><span class="lang-only" data-lang="en">If you have a project that is unusual, technical, or hard to explain, it is probably the kind I like most.</span></p>
+                <div class="mt-6 flex flex-wrap justify-center gap-3">
+                    <a href="mailto:hi@cerco.dev" class="button-primary"><span class="lang-only" data-lang="es">Escribeme</span><span class="lang-only" data-lang="en">Email me</span></a>
+                    <a href="cv.html" class="button-secondary"><span class="lang-only" data-lang="es">Abrir CV</span><span class="lang-only" data-lang="en">Open resume</span></a>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
