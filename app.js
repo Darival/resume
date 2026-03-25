@@ -2,8 +2,7 @@
   const root = document.documentElement;
   const translations = window.SITE_TRANSLATIONS || {};
   const savedLanguage = localStorage.getItem("site-language");
-  const browserLanguage = navigator.language && navigator.language.toLowerCase().startsWith("en") ? "en" : "es";
-  const initialLanguage = savedLanguage || browserLanguage;
+  const initialLanguage = savedLanguage || "es";
 
   function resolveTranslation(language, key) {
     return key.split(".").reduce((value, segment) => {
