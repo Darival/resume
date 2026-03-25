@@ -27,9 +27,9 @@ window.SITE_TRANSLATIONS = {
       metaThemeColor: "#071412"
     },
     landing: {
-      title: "Cesar Rene Contreras Villegas | IA + Automatización Industrial",
-      description: "Sistemas de IA, automatización industrial, electrónica, apps móviles y software a medida por Cesar Rene Contreras Villegas.",
-      socialImageAlt: "Retrato de Cesar Rene Contreras Villegas para compartir el sitio",
+      title: "César René Contreras Villegas | IA + Automatización Industrial",
+      description: "Sistemas de IA, automatización industrial, electrónica, apps móviles y software a medida por César René Contreras Villegas.",
+      socialImageAlt: "Retrato de César René Contreras Villegas para compartir el sitio",
       heroTitle: "Construyo sistemas que conectan IA, hardware y operación en el mundo real.",
       heroBody: "Trabajo en integraciones con LLMs, agentes, aplicaciones MCP, visión artificial, electrónica y apps móviles o web para resolver problemas concretos de negocio e ingeniería.",
       heroPillAgents: "Agentes e integraciones con APIs de IA como ChatGPT, Gemini y Claude",
@@ -49,12 +49,12 @@ window.SITE_TRANSLATIONS = {
       todayBadge: "Lo que hago hoy",
       todayParagraph1: "Me interesa trabajar en proyectos donde el software, la automatización y el hardware se cruzan. Si el problema requiere diseñar la API, la app, la lógica y también la tarjeta controladora, ese tipo de reto me resulta muy natural.",
       todayParagraph2: "No vendo una lista genérica de tecnologías. Me enfoco en resolver sistemas completos: desde una experiencia de usuario limpia hasta una integración industrial que tiene que funcionar en campo.",
-      avatarAlt: "Retrato de Cesar Rene Contreras Villegas"
+      avatarAlt: "Retrato de César René Contreras Villegas"
     },
     cv: {
-      title: "Cesar Rene Contreras Villegas | CV",
-      description: "CV y trabajo seleccionado de Cesar Rene Contreras Villegas en sistemas de IA, automatización industrial, electrónica e ingeniería de software.",
-      socialImageAlt: "Retrato de Cesar Rene Contreras Villegas para compartir el CV",
+      title: "César René Contreras Villegas | CV",
+      description: "CV y trabajo seleccionado de César René Contreras Villegas en sistemas de IA, automatización industrial, electrónica e ingeniería de software.",
+      socialImageAlt: "Retrato de César René Contreras Villegas para compartir el CV",
       introTagline: "Sistemas de IA, automatización industrial e ingeniería de software",
       heroTitle: "Ingeniero de software con enfoque en IA aplicada, automatización industrial y sistemas híbridos.",
       heroBody: "Construyo productos y sistemas completos que combinan backend, frontend, mobile, visión artificial, hardware y lógica de control. Mi trabajo reciente se mueve entre agentes de IA, integraciones complejas y soluciones industriales desplegadas en campo.",
@@ -110,9 +110,9 @@ window.SITE_TRANSLATIONS = {
       metaThemeColor: "#071412"
     },
     landing: {
-      title: "Cesar Rene Contreras Villegas | AI + Industrial Automation",
-      description: "AI systems, industrial automation, electronics, mobile apps, and custom software by Cesar Rene Contreras Villegas.",
-      socialImageAlt: "Portrait of Cesar Rene Contreras Villegas for sharing the site",
+      title: "César René Contreras Villegas | AI + Industrial Automation",
+      description: "AI systems, industrial automation, electronics, mobile apps, and custom software by César René Contreras Villegas.",
+      socialImageAlt: "Portrait of César René Contreras Villegas for sharing the site",
       heroTitle: "I build systems that connect AI, hardware, and real-world operations.",
       heroBody: "I work across LLM integrations, agents, MCP applications, computer vision, electronics, and mobile or web apps to solve concrete business and engineering problems.",
       heroPillAgents: "Agents and AI API integrations across ChatGPT, Gemini, and Claude",
@@ -132,12 +132,12 @@ window.SITE_TRANSLATIONS = {
       todayBadge: "What I do today",
       todayParagraph1: "I enjoy working on projects where software, automation, and hardware intersect. If the problem requires designing the API, the app, the control logic, and the controller board, that kind of challenge feels very natural to me.",
       todayParagraph2: "I do not sell a generic list of technologies. I focus on solving complete systems, from a clean user experience to an industrial integration that has to work reliably in the field.",
-      avatarAlt: "Portrait of Cesar Rene Contreras Villegas"
+      avatarAlt: "Portrait of César René Contreras Villegas"
     },
     cv: {
-      title: "Cesar Rene Contreras Villegas | CV",
-      description: "Resume and selected work by Cesar Rene Contreras Villegas across AI systems, industrial automation, electronics, and software engineering.",
-      socialImageAlt: "Portrait of Cesar Rene Contreras Villegas for sharing the resume",
+      title: "César René Contreras Villegas | CV",
+      description: "Resume and selected work by César René Contreras Villegas across AI systems, industrial automation, electronics, and software engineering.",
+      socialImageAlt: "Portrait of César René Contreras Villegas for sharing the resume",
       introTagline: "AI systems, industrial automation, and software engineering",
       heroTitle: "Software engineer focused on applied AI, industrial automation, and hybrid systems.",
       heroBody: "I build complete products and systems that combine backend, frontend, mobile, computer vision, hardware, and control logic. My recent work spans AI agents, complex integrations, and industrial solutions deployed in the field.",

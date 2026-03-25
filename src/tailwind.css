@@ -58,11 +58,11 @@
   }
 
   .language-toggle {
-    @apply inline-flex items-center gap-1 rounded-full border border-white/10 bg-slate-950/80 p-1 text-sm backdrop-blur;
+    @apply inline-flex items-center gap-1 rounded-full border border-white/10 bg-slate-950/80 p-1 text-xs backdrop-blur sm:text-sm;
   }
 
   .language-toggle button {
-    @apply rounded-full px-3 py-1.5 text-slate-300;
+    @apply rounded-full px-2.5 py-1.5 text-slate-300 sm:px-3;
   }
 
   .language-toggle button[aria-pressed="true"] {
@@ -98,7 +98,7 @@
   }
 
   .nav-link {
-    @apply text-sm font-medium text-slate-300 hover:text-white;
+    @apply whitespace-nowrap text-[11px] font-medium text-slate-300 hover:text-white sm:text-sm;
   }
 
   .button-primary {
