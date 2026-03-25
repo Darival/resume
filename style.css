@@ -215,8 +215,17 @@
   .relative {
     position: relative;
   }
+  .-inset-2 {
+    inset: calc(var(--spacing) * -2);
+  }
   .-inset-3 {
     inset: calc(var(--spacing) * -3);
+  }
+  .inset-x-0 {
+    inset-inline: calc(var(--spacing) * 0);
+  }
+  .top-0 {
+    top: calc(var(--spacing) * 0);
   }
   .mx-auto {
     margin-inline: auto;
@@ -251,8 +260,14 @@
   .grid {
     display: grid;
   }
+  .hidden {
+    display: none;
+  }
   .aspect-square {
     aspect-ratio: 1 / 1;
+  }
+  .h-40 {
+    height: calc(var(--spacing) * 40);
   }
   .min-h-screen {
     min-height: 100vh;
@@ -262,6 +277,9 @@
   }
   .w-28 {
     width: calc(var(--spacing) * 28);
+  }
+  .w-32 {
+    width: calc(var(--spacing) * 32);
   }
   .w-36 {
     width: calc(var(--spacing) * 36);
@@ -345,6 +363,9 @@
       margin-block-end: calc(calc(var(--spacing) * 6) * calc(1 - var(--tw-space-y-reverse)));
     }
   }
+  .justify-self-center {
+    justify-self: center;
+  }
   .rounded {
     border-radius: 0.25rem;
   }
@@ -388,8 +409,14 @@
       background-color: color-mix(in oklab, var(--color-slate-950) 85%, transparent);
     }
   }
+  .bg-\[radial-gradient\(circle\,rgba\(15\,118\,110\,0\.22\)\,transparent_68\%\)\] {
+    background-image: radial-gradient(circle,rgba(15,118,110,0.22),transparent 68%);
+  }
   .bg-\[radial-gradient\(circle\,rgba\(15\,118\,110\,0\.24\)\,transparent_68\%\)\] {
     background-image: radial-gradient(circle,rgba(15,118,110,0.24),transparent 68%);
+  }
+  .bg-\[radial-gradient\(circle_at_top\,rgba\(15\,118\,110\,0\.18\)\,transparent_60\%\)\] {
+    background-image: radial-gradient(circle at top,rgba(15,118,110,0.18),transparent 60%);
   }
   .object-cover {
     object-fit: cover;
@@ -516,12 +543,20 @@
   .uppercase {
     text-transform: uppercase;
   }
+  .shadow-\[0_18px_60px_rgba\(0\,0\,0\,0\.4\)\] {
+    --tw-shadow: 0 18px 60px var(--tw-shadow-color, rgba(0,0,0,0.4));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
   .shadow-\[0_24px_80px_rgba\(0\,0\,0\,0\.42\)\] {
     --tw-shadow: 0 24px 80px var(--tw-shadow-color, rgba(0,0,0,0.42));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
   .blur-lg {
     --tw-blur: blur(var(--blur-lg));
+    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+  }
+  .blur-md {
+    --tw-blur: blur(var(--blur-md));
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
   }
   .backdrop-blur {
@@ -554,6 +589,11 @@
       width: calc(var(--spacing) * 32);
     }
   }
+  .sm\:w-36 {
+    @media (width >= 40rem) {
+      width: calc(var(--spacing) * 36);
+    }
+  }
   .sm\:w-40 {
     @media (width >= 40rem) {
       width: calc(var(--spacing) * 40);
@@ -562,6 +602,11 @@
   .sm\:grid-cols-2 {
     @media (width >= 40rem) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  .sm\:grid-cols-\[auto_1fr\] {
+    @media (width >= 40rem) {
+      grid-template-columns: auto 1fr;
     }
   }
   .sm\:gap-5 {
@@ -662,9 +707,19 @@
       width: calc(var(--spacing) * 36);
     }
   }
+  .lg\:w-40 {
+    @media (width >= 64rem) {
+      width: calc(var(--spacing) * 40);
+    }
+  }
   .lg\:w-52 {
     @media (width >= 64rem) {
       width: calc(var(--spacing) * 52);
+    }
+  }
+  .lg\:grid-cols-1 {
+    @media (width >= 64rem) {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
     }
   }
   .lg\:grid-cols-3 {
@@ -739,6 +794,11 @@
         margin-block-start: calc(calc(var(--spacing) * 7) * var(--tw-space-y-reverse));
         margin-block-end: calc(calc(var(--spacing) * 7) * calc(1 - var(--tw-space-y-reverse)));
       }
+    }
+  }
+  .lg\:justify-self-end {
+    @media (width >= 64rem) {
+      justify-self: flex-end;
     }
   }
   .lg\:px-12 {
