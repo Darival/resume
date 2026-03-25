@@ -255,9 +255,6 @@
   .grid {
     display: grid;
   }
-  .hidden {
-    display: none;
-  }
   .aspect-square {
     aspect-ratio: 1 / 1;
   }
@@ -345,6 +342,9 @@
   }
   .justify-self-center {
     justify-self: center;
+  }
+  .rounded {
+    border-radius: 0.25rem;
   }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
