@@ -3,15 +3,15 @@
 @theme {
   --font-display: "Space Grotesk", "Segoe UI", sans-serif;
   --font-body: "Manrope", "Segoe UI", sans-serif;
-  --color-ink: #101828;
-  --color-slate: #475467;
-  --color-mist: #f5f7f4;
-  --color-panel: #fffef9;
-  --color-line: rgba(16, 24, 40, 0.1);
+  --color-ink: #e7f2ef;
+  --color-slate: #9fb0ad;
+  --color-mist: #071412;
+  --color-panel: #0d1c19;
+  --color-line: rgba(231, 242, 239, 0.1);
   --color-accent: #0f766e;
   --color-accent-soft: #ccfbf1;
   --color-warm: #c2410c;
-  --shadow-card: 0 18px 60px rgba(16, 24, 40, 0.08);
+  --shadow-card: 0 24px 80px rgba(0, 0, 0, 0.36);
 }
 
 @layer base {
@@ -23,9 +23,10 @@
     font-family: var(--font-body);
     color: var(--color-ink);
     background:
-      radial-gradient(circle at top left, rgba(15, 118, 110, 0.14), transparent 30%),
-      radial-gradient(circle at top right, rgba(194, 65, 12, 0.12), transparent 24%),
-      linear-gradient(180deg, #f8fbf9 0%, #eef2ef 100%);
+      radial-gradient(circle at top left, rgba(20, 184, 166, 0.16), transparent 28%),
+      radial-gradient(circle at top right, rgba(194, 65, 12, 0.16), transparent 22%),
+      radial-gradient(circle at bottom, rgba(8, 47, 73, 0.35), transparent 36%),
+      linear-gradient(180deg, #03110f 0%, #071917 52%, #05110f 100%);
   }
 
   h1,
@@ -41,7 +42,7 @@
   }
 
   ::selection {
-    background: rgba(15, 118, 110, 0.18);
+    background: rgba(45, 212, 191, 0.3);
   }
 }
 
@@ -51,59 +52,59 @@
   }
 
   .language-toggle {
-    @apply inline-flex items-center gap-1 rounded-full border border-black/10 bg-white/75 p-1 text-sm backdrop-blur;
+    @apply inline-flex items-center gap-1 rounded-full border border-white/10 bg-slate-950/80 p-1 text-sm backdrop-blur;
   }
 
   .language-toggle button {
-    @apply rounded-full px-3 py-1.5 text-slate-600;
+    @apply rounded-full px-3 py-1.5 text-slate-300;
   }
 
   .language-toggle button[aria-pressed="true"] {
-    @apply bg-slate-950 text-white;
+    @apply bg-teal-400 text-slate-950;
   }
 
   .eyebrow {
-    @apply inline-flex rounded-full border border-teal-800/10 bg-teal-50 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-teal-800;
+    @apply inline-flex rounded-full border border-teal-300/15 bg-teal-400/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-teal-200;
   }
 
   .hero-card {
-    @apply relative overflow-hidden rounded-4xl border border-black/8 bg-[rgba(255,254,249,0.88)] shadow-card backdrop-blur;
+    @apply relative overflow-hidden rounded-4xl border border-white/10 bg-[rgba(9,22,20,0.82)] shadow-card backdrop-blur;
   }
 
   .section-card {
-    @apply rounded-[1.75rem] border border-black/8 bg-white/80 shadow-[0_12px_40px_rgba(16,24,40,0.05)] backdrop-blur;
+    @apply rounded-[1.75rem] border border-white/8 bg-slate-950/65 shadow-[0_16px_48px_rgba(0,0,0,0.28)] backdrop-blur;
   }
 
   .pill {
-    @apply inline-flex items-center rounded-full border border-black/8 bg-white px-3 py-1 text-sm text-slate-700;
+    @apply inline-flex items-center rounded-full border border-teal-300/10 bg-slate-950/85 px-3 py-1 text-sm text-slate-200;
   }
 
   .nav-link {
-    @apply text-sm font-medium text-slate-600 hover:text-slate-950;
+    @apply text-sm font-medium text-slate-300 hover:text-white;
   }
 
   .button-primary {
-    @apply inline-flex items-center justify-center rounded-full bg-slate-950 px-5 py-3 text-sm font-semibold text-white hover:bg-teal-800;
+    @apply inline-flex items-center justify-center rounded-full bg-teal-400 px-5 py-3 text-sm font-semibold text-slate-950 hover:bg-teal-300;
   }
 
   .button-secondary {
-    @apply inline-flex items-center justify-center rounded-full border border-black/10 bg-white px-5 py-3 text-sm font-semibold text-slate-900 hover:border-slate-950 hover:bg-slate-50;
+    @apply inline-flex items-center justify-center rounded-full border border-white/12 bg-slate-950/80 px-5 py-3 text-sm font-semibold text-slate-100 hover:border-teal-300/40 hover:bg-slate-900;
   }
 
   .stat-card {
-    @apply rounded-[1.4rem] border border-black/8 bg-white/90 p-5;
+    @apply rounded-[1.4rem] border border-white/8 bg-slate-950/85 p-5;
   }
 
   .resume-block {
-    @apply rounded-3xl border border-black/8 bg-white p-6;
+    @apply rounded-3xl border border-white/8 bg-slate-950/82 p-6;
   }
 
   .timeline-item {
-    @apply grid gap-4 rounded-[1.25rem] border border-black/8 bg-white/80 p-5 lg:grid-cols-[160px_1fr];
+    @apply grid gap-4 rounded-[1.25rem] border border-white/8 bg-slate-950/70 p-5 lg:grid-cols-[160px_1fr];
   }
 
   .timeline-date {
-    @apply text-sm font-semibold uppercase tracking-[0.14em] text-slate-500;
+    @apply text-sm font-semibold uppercase tracking-[0.14em] text-slate-400;
   }
 
   .lang-only[hidden] {
