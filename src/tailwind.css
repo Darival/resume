@@ -23,10 +23,16 @@
     font-family: var(--font-body);
     color: var(--color-ink);
     background:
+      linear-gradient(rgba(159, 176, 173, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(159, 176, 173, 0.05) 1px, transparent 1px),
+      linear-gradient(rgba(15, 118, 110, 0.08) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(15, 118, 110, 0.08) 1px, transparent 1px),
       radial-gradient(circle at top left, rgba(20, 184, 166, 0.16), transparent 28%),
       radial-gradient(circle at top right, rgba(194, 65, 12, 0.16), transparent 22%),
       radial-gradient(circle at bottom, rgba(8, 47, 73, 0.35), transparent 36%),
       linear-gradient(180deg, #03110f 0%, #071917 52%, #05110f 100%);
+    background-size: 96px 96px, 96px 96px, 24px 24px, 24px 24px, auto, auto, auto, auto;
+    background-position: 0 0, 0 0, -1px -1px, -1px -1px, 0 0, 0 0, 0 0, 0 0;
   }
 
   h1,
@@ -69,6 +75,18 @@
 
   .hero-card {
     @apply relative overflow-hidden rounded-4xl border border-white/10 bg-[rgba(9,22,20,0.82)] shadow-card backdrop-blur;
+  }
+
+  .hero-card-main {
+    @apply bg-[rgba(9,22,20,0.68)];
+  }
+
+  .hero-card-footer {
+    @apply bg-[rgba(9,22,20,0.58)];
+  }
+
+  .hero-card-resume {
+    @apply bg-[rgba(9,22,20,0.7)];
   }
 
   .section-card {
