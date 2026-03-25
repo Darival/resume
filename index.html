@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cesar Rene Contreras Villegas | AI + Industrial Automation</title>
-    <meta name="description" content="AI systems, industrial automation, electronics, mobile apps, and custom software by Cesar Rene Contreras Villegas.">
+    <title data-i18n="landing.title">Cesar Rene Contreras Villegas | AI + Industrial Automation</title>
+    <meta name="description" content="AI systems, industrial automation, electronics, mobile apps, and custom software by Cesar Rene Contreras Villegas." data-i18n-attr="content: landing.description">
     <meta name="theme-color" content="#071412">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="translations.js" defer></script>
     <script src="app.js" defer></script>
 </head>
 
@@ -19,16 +20,16 @@
         <div class="flex flex-col gap-4 rounded-full border border-white/10 bg-slate-950/60 px-5 py-4 backdrop-blur lg:flex-row lg:items-center lg:justify-between">
             <a href="index.html" class="font-display text-sm font-bold uppercase tracking-[0.22em] text-white">Cerco.dev</a>
             <nav class="flex flex-wrap items-center gap-4 text-sm">
-                <a href="#services" class="nav-link"><span class="lang-only" data-lang="es">Servicios</span><span class="lang-only" data-lang="en">Services</span></a>
-                <a href="#contact" class="nav-link"><span class="lang-only" data-lang="es">Contacto</span><span class="lang-only" data-lang="en">Contact</span></a>
-                <a href="cv.html" class="nav-link"><span class="lang-only" data-lang="es">CV</span><span class="lang-only" data-lang="en">Resume</span></a>
+                <a href="#services" class="nav-link" data-i18n="shared.navServices">Servicios</a>
+                <a href="#contact" class="nav-link" data-i18n="shared.navContact">Contacto</a>
+                <a href="cv.html" class="nav-link" data-i18n="shared.navResume">CV</a>
             </nav>
             <div class="flex flex-wrap items-center gap-3">
                 <div class="language-toggle" data-language-toggle>
                     <button type="button" data-lang="es" aria-pressed="false">ES</button>
                     <button type="button" data-lang="en" aria-pressed="false">EN</button>
                 </div>
-                <a href="mailto:hi@cerco.dev" class="button-primary"><span class="lang-only" data-lang="es">Hablemos</span><span class="lang-only" data-lang="en">Let&apos;s talk</span></a>
+                <a href="mailto:hi@cerco.dev" class="button-primary" data-i18n="shared.ctaTalk">Hablemos</a>
             </div>
         </div>
     </header>
@@ -38,21 +39,21 @@
             <div class="absolute inset-x-0 top-0 h-40 bg-[radial-gradient(circle_at_top,rgba(15,118,110,0.18),transparent_60%)]"></div>
             <div class="relative grid gap-10 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
                 <div class="space-y-6">
-                    <span class="eyebrow"><span class="lang-only" data-lang="es">AI, automatizacion industrial y software a medida</span><span class="lang-only" data-lang="en">AI, industrial automation, and custom software</span></span>
+                    <span class="eyebrow" data-i18n="shared.heroBadge">AI, automatizacion industrial y software a medida</span>
                     <div class="space-y-4">
-                        <h1 class="max-w-4xl text-4xl font-bold tracking-[-0.05em] text-white sm:text-5xl lg:text-7xl"><span class="lang-only" data-lang="es">Construyo sistemas que conectan AI, hardware y operacion real.</span><span class="lang-only" data-lang="en">I build systems that connect AI, hardware, and real-world operations.</span></h1>
-                        <p class="max-w-3xl text-lg leading-8 text-slate-300 sm:text-xl"><span class="lang-only" data-lang="es">Trabajo en integraciones con LLMs, agentes, aplicaciones MCP, vision artificial, electronica y apps moviles o web para resolver problemas concretos de negocio e ingenieria.</span><span class="lang-only" data-lang="en">I work across LLM integrations, agents, MCP applications, computer vision, electronics, and mobile or web apps to solve concrete business and engineering problems.</span></p>
+                        <h1 class="max-w-4xl text-4xl font-bold tracking-[-0.05em] text-white sm:text-5xl lg:text-7xl" data-i18n="landing.heroTitle">Construyo sistemas que conectan AI, hardware y operacion real.</h1>
+                        <p class="max-w-3xl text-lg leading-8 text-slate-300 sm:text-xl" data-i18n="landing.heroBody">Trabajo en integraciones con LLMs, agentes, aplicaciones MCP, vision artificial, electronica y apps moviles o web para resolver problemas concretos de negocio e ingenieria.</p>
                     </div>
 
                     <div class="flex flex-wrap gap-3 text-sm text-slate-200">
-                        <span class="pill"><span class="lang-only" data-lang="es">Agentes e integraciones con ChatGPT API</span><span class="lang-only" data-lang="en">Agents and ChatGPT API integrations</span></span>
-                        <span class="pill"><span class="lang-only" data-lang="es">Vision artificial para seguridad industrial</span><span class="lang-only" data-lang="en">Computer vision for industrial safety</span></span>
-                        <span class="pill"><span class="lang-only" data-lang="es">Diseno de circuitos y controladoras</span><span class="lang-only" data-lang="en">Circuit design and controller boards</span></span>
+                        <span class="pill" data-i18n="landing.heroPillAgents">Agentes e integraciones con ChatGPT API</span>
+                        <span class="pill" data-i18n="landing.heroPillVision">Vision artificial para seguridad industrial</span>
+                        <span class="pill" data-i18n="landing.heroPillHardware">Diseno de circuitos y controladoras</span>
                     </div>
 
                     <div class="flex flex-wrap gap-3">
-                        <a href="mailto:hi@cerco.dev" class="button-primary"><span class="lang-only" data-lang="es">¿Tienes un proyecto? Platiquemolo</span><span class="lang-only" data-lang="en">Have a project? Let&apos;s talk</span></a>
-                        <a href="cv.html" class="button-secondary"><span class="lang-only" data-lang="es">Ver CV completo</span><span class="lang-only" data-lang="en">View full resume</span></a>
+                        <a href="mailto:hi@cerco.dev" class="button-primary" data-i18n="landing.heroPrimary">¿Tienes un proyecto? Platiquemolo</a>
+                        <a href="cv.html" class="button-secondary" data-i18n="landing.heroSecondary">Ver CV completo</a>
                     </div>
                 </div>
 
@@ -60,14 +61,14 @@
                     <div class="justify-self-center lg:justify-self-end">
                         <div class="relative mx-auto w-32 sm:w-36 lg:w-40">
                             <div class="absolute -inset-2 rounded-full bg-[radial-gradient(circle,rgba(15,118,110,0.22),transparent_68%)] blur-md"></div>
-                            <img src="avatar.jpg" alt="Portrait of Cesar Rene Contreras Villegas" class="relative aspect-square w-full rounded-full border border-white/20 object-cover shadow-[0_18px_60px_rgba(0,0,0,0.4)]">
+                            <img src="avatar.jpg" alt="Portrait of Cesar Rene Contreras Villegas" data-i18n-attr="alt: landing.avatarAlt" class="relative aspect-square w-full rounded-full border border-white/20 object-cover shadow-[0_18px_60px_rgba(0,0,0,0.4)]">
                         </div>
                     </div>
                     <div class="stat-card space-y-4">
-                        <p class="text-sm font-semibold uppercase tracking-[0.16em] text-slate-400"><span class="lang-only" data-lang="es">Perfil actual</span><span class="lang-only" data-lang="en">Current profile</span></p>
+                        <p class="text-sm font-semibold uppercase tracking-[0.16em] text-slate-400" data-i18n="shared.labelCurrentProfile">Perfil actual</p>
                         <div class="space-y-3 text-sm leading-7 text-slate-200 sm:text-base">
-                            <p><span class="lang-only" data-lang="es">Desarrollo soluciones donde una API sola no basta: sensores, camaras, logica de control, apps y automatizacion conectados en un mismo sistema.</span><span class="lang-only" data-lang="en">I build solutions where an API alone is not enough: sensors, cameras, control logic, apps, and automation connected inside one system.</span></p>
-                            <p><span class="lang-only" data-lang="es">Desde software para operacion hasta electronica de campo, me enfoco en sistemas utiles, desplegables y mantenibles.</span><span class="lang-only" data-lang="en">From operational software to field electronics, I focus on systems that are useful, deployable, and maintainable.</span></p>
+                            <p data-i18n="shared.currentProfileLead">Desarrollo soluciones donde una API sola no basta: sensores, camaras, logica de control, apps y automatizacion conectados en un mismo sistema.</p>
+                            <p data-i18n="shared.currentProfileBody">Desde software para operacion hasta electronica de campo, me enfoco en sistemas utiles, desplegables y mantenibles.</p>
                         </div>
                     </div>
                 </div>
@@ -76,38 +77,38 @@
 
         <section id="services" class="grid gap-4 py-8 sm:gap-6 sm:py-10 lg:grid-cols-3 lg:py-14">
             <article class="section-card p-6 sm:p-7">
-                <p class="mb-3 text-sm font-semibold uppercase tracking-[0.16em] text-teal-300">AI systems</p>
-                <h2 class="text-2xl font-bold text-white"><span class="lang-only" data-lang="es">Agentes, LLMs y automatizacion inteligente</span><span class="lang-only" data-lang="en">Agents, LLMs, and intelligent automation</span></h2>
-                <p class="mt-4 text-base leading-7 text-slate-300"><span class="lang-only" data-lang="es">Integraciones con ChatGPT API, agentes de trabajo, herramientas MCP y flujos automatizados que conectan procesos internos, datos y operaciones.</span><span class="lang-only" data-lang="en">ChatGPT API integrations, working agents, MCP tooling, and automated flows that connect internal processes, data, and operations.</span></p>
+                <p class="mb-3 text-sm font-semibold uppercase tracking-[0.16em] text-teal-300" data-i18n="landing.servicesAiLabel">AI systems</p>
+                <h2 class="text-2xl font-bold text-white" data-i18n="landing.servicesAiTitle">Agentes, LLMs y automatizacion inteligente</h2>
+                <p class="mt-4 text-base leading-7 text-slate-300" data-i18n="landing.servicesAiBody">Integraciones con ChatGPT API, agentes de trabajo, herramientas MCP y flujos automatizados que conectan procesos internos, datos y operaciones.</p>
             </article>
 
             <article class="section-card p-6 sm:p-7">
-                <p class="mb-3 text-sm font-semibold uppercase tracking-[0.16em] text-orange-300">Industrial</p>
-                <h2 class="text-2xl font-bold text-white"><span class="lang-only" data-lang="es">Vision artificial, control y electronica aplicada</span><span class="lang-only" data-lang="en">Computer vision, control, and applied electronics</span></h2>
-                <p class="mt-4 text-base leading-7 text-slate-300"><span class="lang-only" data-lang="es">Sistemas de seguridad para montacargas, deteccion de riesgos con camaras y DVR, y tarjetas controladoras disenadas para interactuar con el mundo fisico.</span><span class="lang-only" data-lang="en">Forklift safety systems, risk detection with cameras and DVRs, and controller boards designed to interact with the physical world.</span></p>
+                <p class="mb-3 text-sm font-semibold uppercase tracking-[0.16em] text-orange-300" data-i18n="landing.servicesIndustrialLabel">Industrial</p>
+                <h2 class="text-2xl font-bold text-white" data-i18n="landing.servicesIndustrialTitle">Vision artificial, control y electronica aplicada</h2>
+                <p class="mt-4 text-base leading-7 text-slate-300" data-i18n="landing.servicesIndustrialBody">Sistemas de seguridad para montacargas, deteccion de riesgos con camaras y DVR, y tarjetas controladoras disenadas para interactuar con el mundo fisico.</p>
             </article>
 
             <article class="section-card p-6 sm:p-7">
-                <p class="mb-3 text-sm font-semibold uppercase tracking-[0.16em] text-slate-400">Product</p>
-                <h2 class="text-2xl font-bold text-white"><span class="lang-only" data-lang="es">Apps, APIs y plataformas de operacion</span><span class="lang-only" data-lang="en">Apps, APIs, and operational platforms</span></h2>
-                <p class="mt-4 text-base leading-7 text-slate-300"><span class="lang-only" data-lang="es">Aplicaciones moviles para iOS y Android, sistemas web, pagos con Stripe, facturacion SAT e integraciones con WhatsApp para automatizar procesos reales.</span><span class="lang-only" data-lang="en">Mobile apps for iOS and Android, web systems, Stripe payments, SAT invoicing, and WhatsApp integrations that automate real processes.</span></p>
+                <p class="mb-3 text-sm font-semibold uppercase tracking-[0.16em] text-slate-400" data-i18n="landing.servicesProductLabel">Product</p>
+                <h2 class="text-2xl font-bold text-white" data-i18n="landing.servicesProductTitle">Apps, APIs y plataformas de operacion</h2>
+                <p class="mt-4 text-base leading-7 text-slate-300" data-i18n="landing.servicesProductBody">Aplicaciones moviles para iOS y Android, sistemas web, pagos con Stripe, facturacion SAT e integraciones con WhatsApp para automatizar procesos reales.</p>
             </article>
         </section>
 
         <section class="grid gap-4 lg:grid-cols-[1.2fr_0.8fr]">
             <article class="section-card p-6 sm:p-8">
-                <span class="eyebrow mb-5"><span class="lang-only" data-lang="es">Lo que hago hoy</span><span class="lang-only" data-lang="en">What I do today</span></span>
+                <span class="eyebrow mb-5" data-i18n="landing.todayBadge">Lo que hago hoy</span>
                 <div class="space-y-5 text-base leading-8 text-slate-200">
-                    <p><span class="lang-only" data-lang="es">Me interesa trabajar en proyectos donde software, automatizacion y hardware se cruzan. Si el problema requiere disenar la API, la app, la logica y tambien la tarjeta controladora, ese tipo de reto me queda muy natural.</span><span class="lang-only" data-lang="en">I like working on projects where software, automation, and hardware intersect. If the problem requires designing the API, the app, the control logic, and the controller board, that kind of challenge fits me naturally.</span></p>
-                    <p><span class="lang-only" data-lang="es">No vendo una lista generica de tecnologias. Me enfoco en resolver sistemas completos: desde una experiencia de usuario limpia hasta una integracion industrial que tiene que funcionar en campo.</span><span class="lang-only" data-lang="en">I do not sell a generic list of technologies. I focus on solving complete systems: from a clean user experience to an industrial integration that must work in the field.</span></p>
+                    <p data-i18n="landing.todayParagraph1">Me interesa trabajar en proyectos donde software, automatizacion y hardware se cruzan. Si el problema requiere disenar la API, la app, la logica y tambien la tarjeta controladora, ese tipo de reto me queda muy natural.</p>
+                    <p data-i18n="landing.todayParagraph2">No vendo una lista generica de tecnologias. Me enfoco en resolver sistemas completos: desde una experiencia de usuario limpia hasta una integracion industrial que tiene que funcionar en campo.</p>
                 </div>
             </article>
 
             <aside class="section-card p-6 sm:p-8" id="contact">
-                <span class="eyebrow mb-5"><span class="lang-only" data-lang="es">Contacto</span><span class="lang-only" data-lang="en">Contact</span></span>
+                <span class="eyebrow mb-5" data-i18n="shared.labelContact">Contacto</span>
                 <div class="space-y-4 text-base text-slate-200">
                     <a href="mailto:hi@cerco.dev" class="block rounded-2xl border border-white/8 bg-slate-950/85 px-4 py-4 hover:border-teal-300/40"><div class="text-sm uppercase tracking-[0.14em] text-slate-400">Email</div><div class="mt-1 font-semibold text-white">hi@cerco.dev</div></a>
-                    <a href="tel:+5218111253709" class="block rounded-2xl border border-white/8 bg-slate-950/85 px-4 py-4 hover:border-teal-300/40"><div class="text-sm uppercase tracking-[0.14em] text-slate-400"><span class="lang-only" data-lang="es">Telefono</span><span class="lang-only" data-lang="en">Phone</span></div><div class="mt-1 font-semibold text-white">+52 1 811 125 3709</div></a>
+                    <a href="tel:+5218111253709" class="block rounded-2xl border border-white/8 bg-slate-950/85 px-4 py-4 hover:border-teal-300/40"><div class="text-sm uppercase tracking-[0.14em] text-slate-400" data-i18n="shared.labelPhone">Telefono</div><div class="mt-1 font-semibold text-white">+52 1 811 125 3709</div></a>
                     <a href="https://cerco.dev" class="block rounded-2xl border border-white/8 bg-slate-950/85 px-4 py-4 hover:border-teal-300/40">cerco.dev</a>
                     <a href="https://github.com/Darival" class="block rounded-2xl border border-white/8 bg-slate-950/85 px-4 py-4 hover:border-teal-300/40">github.com/Darival</a>
                 </div>
@@ -116,10 +117,10 @@
 
         <section class="py-8 sm:py-10 lg:py-14">
             <div class="hero-card px-6 py-8 text-center sm:px-10 sm:py-10">
-                <p class="mx-auto max-w-3xl text-2xl font-bold text-white sm:text-4xl"><span class="lang-only" data-lang="es">Si tienes un proyecto raro, tecnico o dificil de explicar, probablemente es de los que mas me gustan.</span><span class="lang-only" data-lang="en">If you have a project that is unusual, technical, or hard to explain, it is probably the kind I like most.</span></p>
+                <p class="mx-auto max-w-3xl text-2xl font-bold text-white sm:text-4xl" data-i18n="shared.footerLead">Si tienes un proyecto raro, tecnico o dificil de explicar, probablemente es de los que mas me gustan.</p>
                 <div class="mt-6 flex flex-wrap justify-center gap-3">
-                    <a href="mailto:hi@cerco.dev" class="button-primary"><span class="lang-only" data-lang="es">Escribeme</span><span class="lang-only" data-lang="en">Email me</span></a>
-                    <a href="cv.html" class="button-secondary"><span class="lang-only" data-lang="es">Abrir CV</span><span class="lang-only" data-lang="en">Open resume</span></a>
+                    <a href="mailto:hi@cerco.dev" class="button-primary" data-i18n="shared.footerEmail">Escribeme</a>
+                    <a href="cv.html" class="button-secondary" data-i18n="shared.ctaOpenResume">Abrir CV</a>
                 </div>
             </div>
         </section>
