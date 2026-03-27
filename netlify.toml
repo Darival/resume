@@ -4,3 +4,8 @@
 
 [build.environment]
   NODE_VERSION = "23"
+
+[[redirects]]
+  from = "/cv.html"
+  to = "/"
+  status = 301
