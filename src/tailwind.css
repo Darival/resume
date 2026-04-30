@@ -147,7 +147,28 @@
   }
 
   .hero-card-main {
-    @apply bg-[rgba(9,22,20,0.68)];
+    background-color: rgba(5, 14, 13, 0.92);
+    background-image:
+      linear-gradient(90deg, rgba(4, 10, 10, 0.9) 0%, rgba(4, 10, 10, 0.74) 38%, rgba(4, 10, 10, 0.16) 100%),
+      linear-gradient(180deg, rgba(7, 20, 18, 0.28) 0%, rgba(7, 20, 18, 0.56) 100%),
+      url("https://images.unsplash.com/photo-1516870463970-23a76d9b1da0?q=80&w=3133&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-position: 0 0, 0 0, center center;
+    background-repeat: no-repeat;
+    background-size: auto, auto, cover;
+    background-clip: padding-box, padding-box, padding-box;
+  }
+
+  .hero-card-main::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(90deg, rgba(159, 176, 173, 0.035) 1px, transparent 1px),
+      linear-gradient(rgba(159, 176, 173, 0.035) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(5, 14, 13, 0.05) 0%, rgba(5, 14, 13, 0.05) 40%, rgba(5, 14, 13, 0.18) 100%);
+    background-size: 72px 72px, 72px 72px, auto;
+    background-position: 0 0, 0 0, 0 0;
+    pointer-events: none;
   }
 
   .hero-card-footer {
@@ -158,76 +179,12 @@
     @apply bg-[rgba(9,22,20,0.7)];
   }
 
-  .hero-layout {
-    display: grid;
-    gap: 2rem;
-  }
-
-  @media (min-width: 1024px) {
-    .hero-layout {
-      grid-template-columns: minmax(0, 1.05fr) minmax(340px, 0.95fr);
-      align-items: center;
-    }
-  }
-
   .hero-content {
     @apply relative z-10 space-y-6 lg:space-y-7;
   }
-
-  .hero-visual {
-    @apply relative mx-auto w-full max-w-xl overflow-hidden rounded-[2.1rem] lg:max-w-none;
-  }
-
-  .hero-visual-image {
-    position: relative;
-    min-height: 420px;
-    background:
-      linear-gradient(180deg, rgba(4, 10, 10, 0.05), rgba(4, 10, 10, 0.55)),
-      linear-gradient(120deg, rgba(4, 10, 10, 0.1) 0%, rgba(4, 10, 10, 0.75) 62%),
-      radial-gradient(circle at 18% 16%, rgba(45, 212, 191, 0.34), transparent 20%),
-      radial-gradient(circle at 78% 22%, rgba(251, 191, 36, 0.16), transparent 18%),
-      radial-gradient(circle at 56% 76%, rgba(14, 165, 233, 0.18), transparent 20%),
-      linear-gradient(90deg, rgba(159, 176, 173, 0.05) 1px, transparent 1px),
-      linear-gradient(rgba(159, 176, 173, 0.05) 1px, transparent 1px),
-      linear-gradient(180deg, #16312d 0%, #0a1817 48%, #050b0b 100%);
-    background-size: auto, auto, auto, auto, auto, 72px 72px, 72px 72px, auto;
-    background-position: 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0;
-  }
-
-  .hero-visual-image::before {
-    content: "";
-    position: absolute;
-    inset: auto 10% 8% 6%;
-    height: 42%;
-    border-radius: 1.8rem 1.8rem 0.9rem 0.9rem;
-    background:
-      linear-gradient(180deg, rgba(3, 8, 8, 0.08), rgba(3, 8, 8, 0.72)),
-      linear-gradient(90deg, rgba(231, 242, 239, 0.08) 1px, transparent 1px),
-      linear-gradient(rgba(231, 242, 239, 0.08) 1px, transparent 1px),
-      linear-gradient(180deg, rgba(20, 184, 166, 0.2), rgba(4, 10, 10, 0.08));
-    background-size: auto, 32px 32px, 32px 32px, auto;
-    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.28);
-    transform: perspective(900px) rotateX(66deg);
-    transform-origin: center bottom;
-  }
-
-  .hero-visual-image::after {
-    content: "";
-    position: absolute;
-    inset: 8% 12% 18% 42%;
-    border-radius: 1.4rem;
-    background:
-      linear-gradient(180deg, rgba(231, 242, 239, 0.16), rgba(231, 242, 239, 0.02)),
-      linear-gradient(135deg, rgba(45, 212, 191, 0.24), rgba(14, 165, 233, 0.08));
-    box-shadow:
-      0 24px 60px rgba(0, 0, 0, 0.3),
-      inset 0 1px 0 rgba(255, 255, 255, 0.08);
-    clip-path: polygon(18% 0%, 100% 0%, 84% 100%, 0% 100%);
-  }
-
   @media (min-width: 1024px) {
-    .hero-visual-image {
-      min-height: 520px;
+    .hero-card-main {
+      background-position: 0 0, 0 0, center 44%;
     }
   }
 
