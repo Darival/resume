@@ -158,6 +158,79 @@
     @apply bg-[rgba(9,22,20,0.7)];
   }
 
+  .hero-layout {
+    display: grid;
+    gap: 2rem;
+  }
+
+  @media (min-width: 1024px) {
+    .hero-layout {
+      grid-template-columns: minmax(0, 1.05fr) minmax(340px, 0.95fr);
+      align-items: center;
+    }
+  }
+
+  .hero-content {
+    @apply relative z-10 space-y-6 lg:space-y-7;
+  }
+
+  .hero-visual {
+    @apply relative mx-auto w-full max-w-xl overflow-hidden rounded-[2.1rem] lg:max-w-none;
+  }
+
+  .hero-visual-image {
+    position: relative;
+    min-height: 420px;
+    background:
+      linear-gradient(180deg, rgba(4, 10, 10, 0.05), rgba(4, 10, 10, 0.55)),
+      linear-gradient(120deg, rgba(4, 10, 10, 0.1) 0%, rgba(4, 10, 10, 0.75) 62%),
+      radial-gradient(circle at 18% 16%, rgba(45, 212, 191, 0.34), transparent 20%),
+      radial-gradient(circle at 78% 22%, rgba(251, 191, 36, 0.16), transparent 18%),
+      radial-gradient(circle at 56% 76%, rgba(14, 165, 233, 0.18), transparent 20%),
+      linear-gradient(90deg, rgba(159, 176, 173, 0.05) 1px, transparent 1px),
+      linear-gradient(rgba(159, 176, 173, 0.05) 1px, transparent 1px),
+      linear-gradient(180deg, #16312d 0%, #0a1817 48%, #050b0b 100%);
+    background-size: auto, auto, auto, auto, auto, 72px 72px, 72px 72px, auto;
+    background-position: 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0;
+  }
+
+  .hero-visual-image::before {
+    content: "";
+    position: absolute;
+    inset: auto 10% 8% 6%;
+    height: 42%;
+    border-radius: 1.8rem 1.8rem 0.9rem 0.9rem;
+    background:
+      linear-gradient(180deg, rgba(3, 8, 8, 0.08), rgba(3, 8, 8, 0.72)),
+      linear-gradient(90deg, rgba(231, 242, 239, 0.08) 1px, transparent 1px),
+      linear-gradient(rgba(231, 242, 239, 0.08) 1px, transparent 1px),
+      linear-gradient(180deg, rgba(20, 184, 166, 0.2), rgba(4, 10, 10, 0.08));
+    background-size: auto, 32px 32px, 32px 32px, auto;
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.28);
+    transform: perspective(900px) rotateX(66deg);
+    transform-origin: center bottom;
+  }
+
+  .hero-visual-image::after {
+    content: "";
+    position: absolute;
+    inset: 8% 12% 18% 42%;
+    border-radius: 1.4rem;
+    background:
+      linear-gradient(180deg, rgba(231, 242, 239, 0.16), rgba(231, 242, 239, 0.02)),
+      linear-gradient(135deg, rgba(45, 212, 191, 0.24), rgba(14, 165, 233, 0.08));
+    box-shadow:
+      0 24px 60px rgba(0, 0, 0, 0.3),
+      inset 0 1px 0 rgba(255, 255, 255, 0.08);
+    clip-path: polygon(18% 0%, 100% 0%, 84% 100%, 0% 100%);
+  }
+
+  @media (min-width: 1024px) {
+    .hero-visual-image {
+      min-height: 520px;
+    }
+  }
+
   .section-card {
     @apply rounded-[1.75rem] border border-white/8 bg-slate-950/65 shadow-[0_16px_48px_rgba(0,0,0,0.28)] backdrop-blur;
   }
@@ -210,6 +283,40 @@
     @apply mt-4 text-base leading-7 text-slate-300;
   }
 
+  .case-highlight {
+    @apply mt-4 text-base leading-7 text-slate-100;
+  }
+
+  .case-details {
+    @apply mt-4 rounded-[1.2rem] border border-white/8 bg-slate-950/80;
+  }
+
+  .case-details summary {
+    @apply flex cursor-pointer items-center justify-between gap-3 px-4 py-3 text-sm font-semibold text-teal-200;
+    list-style: none;
+  }
+
+  .case-details summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .case-details summary::after {
+    content: "+";
+    @apply text-lg leading-none text-slate-400;
+  }
+
+  .case-details[open] summary::after {
+    content: "-";
+  }
+
+  .case-detail-list {
+    @apply space-y-3 border-t border-white/8 px-4 pb-4 pt-1;
+  }
+
+  .case-detail-item {
+    @apply text-sm leading-6 text-slate-300;
+  }
+
   .case-tags {
     @apply mt-5 flex flex-wrap gap-2;
   }
@@ -238,6 +345,14 @@
     @apply rounded-[1.35rem] border border-white/8 bg-slate-950/80 p-5;
   }
 
+  .capability-chip-grid {
+    @apply grid gap-3 sm:grid-cols-2;
+  }
+
+  .capability-chip {
+    @apply rounded-[1.15rem] border border-white/8 bg-slate-950/80 px-4 py-3 text-sm font-medium text-slate-200;
+  }
+
   .capability-title {
     @apply text-sm font-semibold uppercase tracking-[0.16em] text-teal-200;
   }
@@ -248,6 +363,10 @@
 
   .contact-card {
     @apply block rounded-[1.45rem] border border-white/8 bg-slate-950/85 px-5 py-5 hover:border-teal-300/30;
+  }
+
+  .about-point {
+    @apply rounded-[1.15rem] border border-white/8 bg-slate-950/72 px-4 py-3 leading-7 text-slate-200;
   }
 
   .contact-card-primary {

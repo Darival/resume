@@ -52,19 +52,13 @@
 
     <main class="shell pb-12 sm:pb-16 lg:pb-24">
         <section class="hero-card hero-card-main px-6 py-8 sm:px-8 sm:py-10 lg:px-12 lg:py-14">
-            <div class="relative space-y-6 lg:space-y-7">
-                <div class="space-y-6 lg:space-y-7">
+            <div class="hero-layout">
+                <div class="hero-content">
                     <span class="eyebrow" data-i18n="shared.heroBadge">CERCO.DEV | Desarrollo de software e integraciones</span>
 
                     <div class="space-y-5 sm:space-y-6">
-                        <h1 class="max-w-4xl text-4xl font-bold tracking-[-0.05em] text-white sm:text-5xl lg:text-7xl" data-i18n="landing.heroTitle">Construimos sistemas que conectan IA, hardware y operación en el mundo real.</h1>
-                        <p class="max-w-3xl text-lg leading-8 text-slate-300 sm:text-xl" data-i18n="landing.heroBody">Desarrollamos software a medida, APIs, automatizaciones, dashboards y herramientas internas para equipos que necesitan resolver procesos reales y conectar sistemas sin complicarse de más.</p>
-                    </div>
-
-                    <div class="flex flex-wrap gap-3 text-sm text-slate-200">
-                        <span class="pill" data-i18n="landing.heroPillOps">Operación, logística y herramientas internas</span>
-                        <span class="pill" data-i18n="landing.heroPillIntegrations">APIs, automatización y sistemas empresariales</span>
-                        <span class="pill" data-i18n="landing.heroPillExecution">De la idea al despliegue con atención directa</span>
+                        <h1 class="max-w-3xl text-4xl font-bold tracking-[-0.05em] text-white sm:text-5xl lg:text-6xl xl:text-7xl" data-i18n="landing.heroTitle">Construimos sistemas que conectan IA, hardware y operación en el mundo real.</h1>
+                        <p class="max-w-2xl text-lg leading-8 text-slate-300 sm:text-xl" data-i18n="landing.heroBody">Desarrollamos software a medida, APIs, automatizaciones, dashboards y herramientas internas para equipos que necesitan resolver procesos reales y conectar sistemas sin complicarse de más.</p>
                     </div>
 
                     <div class="flex flex-wrap gap-3">
@@ -73,6 +67,8 @@
                         <a href="#cases" class="button-secondary" data-i18n="landing.heroTertiary">Ver proyectos</a>
                     </div>
                 </div>
+
+                <div class="hero-visual hero-visual-image" role="img" data-i18n-attr="aria-label: landing.heroVisualAlt"></div>
             </div>
         </section>
 
@@ -138,9 +134,15 @@
                 <article class="case-card">
                     <p class="case-kicker" data-i18n="landing.caseForkliftKicker">Seguridad industrial</p>
                     <h3 class="case-title" data-i18n="landing.caseForkliftTitle">Visión artificial y control físico para montacargas</h3>
-                    <p class="case-copy" data-i18n="landing.caseForkliftProblem">Problema: monitorear conductas de riesgo y actuar cuando la operación puede poner en peligro a personas o equipo.</p>
-                    <p class="case-copy" data-i18n="landing.caseForkliftSolution">Solución: integración de cámaras, DVR, modelos de IA y una controladora física capaz de intervenir el vehículo en condiciones críticas.</p>
-                    <p class="case-copy" data-i18n="landing.caseForkliftResult">Resultado: una solución diseñada para operar en campo, conectando software, hardware y lógica de seguridad en el mismo sistema.</p>
+                    <p class="case-highlight" data-i18n="landing.caseForkliftHighlight">IA, video y control físico integrados para intervenir riesgos en campo.</p>
+                    <details class="case-details">
+                        <summary data-i18n="shared.caseDetailsToggle">Ver problema, solución y resultado</summary>
+                        <div class="case-detail-list">
+                            <p class="case-detail-item" data-i18n="landing.caseForkliftProblem">Problema: monitorear conductas de riesgo y actuar cuando la operación puede poner en peligro a personas o equipo.</p>
+                            <p class="case-detail-item" data-i18n="landing.caseForkliftSolution">Solución: integración de cámaras, DVR, modelos de IA y una controladora física capaz de intervenir el vehículo en condiciones críticas.</p>
+                            <p class="case-detail-item" data-i18n="landing.caseForkliftResult">Resultado: una solución diseñada para operar en campo, conectando software, hardware y lógica de seguridad en el mismo sistema.</p>
+                        </div>
+                    </details>
                     <div class="case-tags">
                         <span class="pill">Computer vision</span>
                         <span class="pill">AI</span>
@@ -151,9 +153,15 @@
                 <article class="case-card">
                     <p class="case-kicker" data-i18n="landing.caseGateKicker">Acceso y automatización</p>
                     <h3 class="case-title" data-i18n="landing.caseGateTitle">Controladoras para portones con WhatsApp y apps móviles</h3>
-                    <p class="case-copy" data-i18n="landing.caseGateProblem">Problema: habilitar accesos automatizados con una experiencia simple para usuarios y administradores.</p>
-                    <p class="case-copy" data-i18n="landing.caseGateSolution">Solución: tarjetas controladoras, lógica de eventos, integración con WhatsApp y aplicaciones móviles conectadas al sistema físico.</p>
-                    <p class="case-copy" data-i18n="landing.caseGateResult">Resultado: una solución más accesible para gestionar aperturas y automatizaciones sin depender de procesos manuales.</p>
+                    <p class="case-highlight" data-i18n="landing.caseGateHighlight">Accesos automatizados con hardware propio, WhatsApp y apps móviles.</p>
+                    <details class="case-details">
+                        <summary data-i18n="shared.caseDetailsToggle">Ver problema, solución y resultado</summary>
+                        <div class="case-detail-list">
+                            <p class="case-detail-item" data-i18n="landing.caseGateProblem">Problema: habilitar accesos automatizados con una experiencia simple para usuarios y administradores.</p>
+                            <p class="case-detail-item" data-i18n="landing.caseGateSolution">Solución: tarjetas controladoras, lógica de eventos, integración con WhatsApp y aplicaciones móviles conectadas al sistema físico.</p>
+                            <p class="case-detail-item" data-i18n="landing.caseGateResult">Resultado: una solución más accesible para gestionar aperturas y automatizaciones sin depender de procesos manuales.</p>
+                        </div>
+                    </details>
                     <div class="case-tags">
                         <span class="pill">WhatsApp</span>
                         <span class="pill">Mobile apps</span>
@@ -164,9 +172,15 @@
                 <article class="case-card">
                     <p class="case-kicker" data-i18n="landing.caseBusinessKicker">Integraciones de negocio</p>
                     <h3 class="case-title" data-i18n="landing.caseBusinessTitle">Facturación, pagos e integración de procesos</h3>
-                    <p class="case-copy" data-i18n="landing.caseBusinessProblem">Problema: conectar cobros, facturación y flujos internos que suelen quedar repartidos entre plataformas separadas.</p>
-                    <p class="case-copy" data-i18n="landing.caseBusinessSolution">Solución: desarrollo de integraciones con Stripe, APIs del SAT y automatizaciones para sincronizar plataformas, usuarios y operación.</p>
-                    <p class="case-copy" data-i18n="landing.caseBusinessResult">Resultado: procesos más claros y menos fricción operativa en tareas críticas del negocio.</p>
+                    <p class="case-highlight" data-i18n="landing.caseBusinessHighlight">Cobros, facturación y operación conectados en un flujo continuo.</p>
+                    <details class="case-details">
+                        <summary data-i18n="shared.caseDetailsToggle">Ver problema, solución y resultado</summary>
+                        <div class="case-detail-list">
+                            <p class="case-detail-item" data-i18n="landing.caseBusinessProblem">Problema: conectar cobros, facturación y flujos internos que suelen quedar repartidos entre plataformas separadas.</p>
+                            <p class="case-detail-item" data-i18n="landing.caseBusinessSolution">Solución: desarrollo de integraciones con Stripe, APIs del SAT y automatizaciones para sincronizar plataformas, usuarios y operación.</p>
+                            <p class="case-detail-item" data-i18n="landing.caseBusinessResult">Resultado: procesos más claros y menos fricción operativa en tareas críticas del negocio.</p>
+                        </div>
+                    </details>
                     <div class="case-tags">
                         <span class="pill">Stripe</span>
                         <span class="pill">SAT APIs</span>
@@ -181,37 +195,27 @@
             <article class="section-card p-6 sm:p-8">
                 <span class="eyebrow mb-5" data-i18n="landing.aboutBadge">Sobre CERCO.DEV</span>
                 <h2 class="text-3xl font-bold text-white" data-i18n="landing.aboutTitle">Somos una práctica de desarrollo fundada por César Contreras y enfocada en soluciones a medida.</h2>
-                <div class="mt-5 space-y-5 text-base leading-8 text-slate-200">
-                    <p data-i18n="landing.aboutParagraph1">El enfoque mezcla desarrollo full-stack, integraciones, automatización y criterio de producto para construir herramientas que le sirvan al negocio, no solo al stack técnico.</p>
-                    <p data-i18n="landing.aboutParagraph2">Cuando el proyecto requiere ir más allá de una aplicación tradicional, también podemos integrar APIs, mensajería, pagos, lógica operativa y componentes que conectan con el mundo físico.</p>
-                    <p data-i18n="landing.aboutParagraph3">No es una agencia grande ni un currículum disfrazado. Es una práctica técnica con trato directo y trabajo serio.</p>
-                </div>
+                <p class="mt-5 max-w-2xl text-lg leading-8 text-slate-200" data-i18n="landing.aboutSummary">Combinamos desarrollo full-stack, integraciones, automatización y criterio de producto para construir herramientas que resuelvan operación real.</p>
+                <ul class="mt-6 space-y-3 text-base text-slate-200">
+                    <li class="about-point" data-i18n="landing.aboutPoint1">Trato directo con la persona que diseña y construye.</li>
+                    <li class="about-point" data-i18n="landing.aboutPoint2">Capacidad de conectar software, pagos, mensajería y hardware.</li>
+                    <li class="about-point" data-i18n="landing.aboutPoint3">Enfoque en herramientas útiles, no en inflar el stack.</li>
+                </ul>
             </article>
 
             <aside class="section-card p-6 sm:p-8">
                 <span class="eyebrow mb-5" data-i18n="landing.capabilitiesBadge">Capacidades</span>
-                <div class="space-y-4">
-                    <article class="capability-group">
-                        <h3 class="capability-title" data-i18n="landing.capabilityFrontendTitle">Frontend</h3>
-                        <p class="capability-body" data-i18n="landing.capabilityFrontendBody">Aplicaciones web, paneles administrativos, interfaces operativas y experiencias orientadas a flujo.</p>
-                    </article>
-                    <article class="capability-group">
-                        <h3 class="capability-title" data-i18n="landing.capabilityBackendTitle">Backend</h3>
-                        <p class="capability-body" data-i18n="landing.capabilityBackendBody">APIs, lógica de negocio, automatizaciones, servicios integrados y arquitectura para procesos internos.</p>
-                    </article>
-                    <article class="capability-group">
-                        <h3 class="capability-title" data-i18n="landing.capabilityHardwareTitle">Hardware embebido y edge</h3>
-                        <p class="capability-body" data-i18n="landing.capabilityHardwareBody">Diseño de controladoras, firmware, integración con sensores y dispositivos que ejecutan lógica en campo o cerca de la operación.</p>
-                    </article>
-                    <article class="capability-group">
-                        <h3 class="capability-title" data-i18n="landing.capabilityDataTitle">Datos e integraciones</h3>
-                        <p class="capability-body" data-i18n="landing.capabilityDataBody">Conexión con facturación, pagos, mensajería, sistemas empresariales y fuentes de datos que deben trabajar juntas.</p>
-                    </article>
-                    <article class="capability-group">
-                        <h3 class="capability-title" data-i18n="landing.capabilityInfraTitle">Infraestructura y despliegue</h3>
-                        <p class="capability-body" data-i18n="landing.capabilityInfraBody">Implementación, soporte, estabilización y mejora continua para soluciones que deben mantenerse en producción.</p>
-                    </article>
-                </div>
+                <p class="text-base leading-7 text-slate-300" data-i18n="landing.capabilitiesIntro">Cobertura técnica para llevar un proyecto de idea a producción.</p>
+                <ul class="mt-5 capability-chip-grid">
+                    <li class="capability-chip" data-i18n="landing.capabilityChip1">Frontend operativo</li>
+                    <li class="capability-chip" data-i18n="landing.capabilityChip2">APIs y backend</li>
+                    <li class="capability-chip" data-i18n="landing.capabilityChip3">Integraciones empresariales</li>
+                    <li class="capability-chip" data-i18n="landing.capabilityChip4">Automatización</li>
+                    <li class="capability-chip" data-i18n="landing.capabilityChip5">Dashboards internos</li>
+                    <li class="capability-chip" data-i18n="landing.capabilityChip6">Hardware embebido</li>
+                    <li class="capability-chip" data-i18n="landing.capabilityChip7">Datos y mensajería</li>
+                    <li class="capability-chip" data-i18n="landing.capabilityChip8">Despliegue y soporte</li>
+                </ul>
             </aside>
         </section>
 
