@@ -4,267 +4,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-i18n="landing.title">CERCO.DEV | Desarrollo de software e integraciones</title>
-    <meta name="description" content="Desarrollamos software a medida, integraciones, automatización y herramientas internas para empresas. Fundado por César Contreras." data-i18n-attr="content: landing.description">
-    <meta name="theme-color" content="#071412">
-    <meta property="og:type" content="website">
+    <title data-i18n="meta.title">César Contreras | Líder técnico</title>
+    <meta name="description" content="Líder técnico en Koda IA, KodaLift y Rental Depot. Software, IA y herramientas para operación real." data-i18n-attr="content: meta.description">
+    <meta name="theme-color" content="#e7f2ef" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#071412" media="(prefers-color-scheme: dark)">
+
+    <meta property="og:type" content="profile">
     <meta property="og:site_name" content="CERCO.DEV">
     <meta property="og:url" content="https://cerco.dev/">
-    <meta property="og:title" content="CERCO.DEV | Desarrollo de software e integraciones" data-i18n-attr="content: landing.title">
-    <meta property="og:description" content="Desarrollamos software a medida, integraciones, automatización y herramientas internas para empresas. Fundado por César Contreras." data-i18n-attr="content: landing.description">
+    <meta property="og:title" content="César Contreras | Líder técnico" data-i18n-attr="content: meta.title">
+    <meta property="og:description" content="Líder técnico en Koda IA, KodaLift y Rental Depot. Software, IA y herramientas para operación real." data-i18n-attr="content: meta.description">
     <meta property="og:image" content="https://cerco.dev/avatar.jpg">
-    <meta property="og:image:alt" content="Portrait of César René Contreras Villegas for sharing the site" data-i18n-attr="content: landing.socialImageAlt">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="CERCO.DEV | Desarrollo de software e integraciones" data-i18n-attr="content: landing.title">
-    <meta name="twitter:description" content="Desarrollamos software a medida, integraciones, automatización y herramientas internas para empresas. Fundado por César Contreras." data-i18n-attr="content: landing.description">
+    <meta property="og:image:width" content="1080">
+    <meta property="og:image:height" content="1080">
+    <meta property="og:image:alt" content="Retrato de César Contreras" data-i18n-attr="content: meta.socialImageAlt">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="César Contreras | Líder técnico" data-i18n-attr="content: meta.title">
+    <meta name="twitter:description" content="Líder técnico en Koda IA, KodaLift y Rental Depot. Software, IA y herramientas para operación real." data-i18n-attr="content: meta.description">
     <meta name="twitter:image" content="https://cerco.dev/avatar.jpg">
-    <meta name="twitter:image:alt" content="Portrait of César René Contreras Villegas for sharing the site" data-i18n-attr="content: landing.socialImageAlt">
+    <meta name="twitter:image:alt" content="Retrato de César Contreras" data-i18n-attr="content: meta.socialImageAlt">
+
     <link rel="canonical" href="https://cerco.dev/">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="shortcut icon" href="favicon.svg">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="fonts/manrope-latin-variable.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/newsreader-latin-variable.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="avatar-800.webp" as="image" type="image/webp" imagesrcset="avatar-540.webp 540w, avatar-800.webp 800w, avatar-1080.webp 1080w" imagesizes="(max-width: 767px) calc(100vw - 2rem), 60vw" fetchpriority="high">
     <link rel="stylesheet" href="style.css">
     <script src="translations.js" defer></script>
+    <script src="articles.js" defer></script>
     <script src="app.js" defer></script>
 </head>
 
-<body class="min-h-screen">
-    <header class="shell py-6 sm:py-8">
-        <div class="flex items-center justify-between gap-3 rounded-full border border-white/10 bg-slate-950/60 px-4 py-3 backdrop-blur sm:gap-4 sm:px-5 sm:py-4">
-            <a href="index.html" class="shrink-0 font-display text-xs font-bold uppercase tracking-[0.18em] text-white sm:text-sm sm:tracking-[0.22em]">CERCO.DEV</a>
-            <nav class="flex min-w-0 flex-nowrap items-center gap-2 text-[11px] sm:gap-4 sm:text-sm">
-                <a href="#services" class="nav-link" data-i18n="shared.navServices">Servicios</a>
-                <a href="#cases" class="nav-link" data-i18n="shared.navCases">Casos</a>
-                <a href="#about" class="nav-link" data-i18n="shared.navAbout">Sobre</a>
-                <a href="#contact" class="nav-link" data-i18n="shared.navContact">Contacto</a>
-            </nav>
-            <div class="flex shrink-0 items-center gap-2 sm:gap-3">
-                <div class="language-toggle" data-language-toggle>
-                    <button type="button" data-lang="es" aria-pressed="false">ES</button>
-                    <button type="button" data-lang="en" aria-pressed="false">EN</button>
-                </div>
-                <a href="https://wa.me/528111253709?text=Hola%20C%C3%A9sar%2C%20quiero%20hablar%20sobre%20un%20proyecto%20con%20CERCO.DEV" class="button-primary hidden sm:inline-flex" data-i18n="shared.ctaTalk">Hablemos</a>
+<body>
+    <a class="skip-link" href="#main" data-i18n="shared.skipLink">Saltar al contenido</a>
+
+    <header class="site-header">
+        <div class="site-shell header-inner">
+            <a class="site-mark" href="/" aria-label="CERCO.DEV">CERCO.DEV</a>
+
+            <div class="language-toggle" role="group" aria-label="Cambiar idioma" data-language-toggle data-i18n-attr="aria-label: shared.languageLabel">
+                <button type="button" data-lang="es" aria-pressed="false">ES</button>
+                <button type="button" data-lang="en" aria-pressed="false">EN</button>
             </div>
         </div>
     </header>
 
-    <main class="shell pb-12 sm:pb-16 lg:pb-24">
-        <section class="hero-card hero-card-main px-6 py-8 sm:px-8 sm:py-10 lg:px-12 lg:py-14">
-            <div class="hero-content">
-                <span class="eyebrow" data-i18n="shared.heroBadge">CERCO.DEV | Desarrollo de software e integraciones</span>
+    <main id="main">
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="site-shell hero-layout">
+                <figure class="hero-media">
+                    <picture>
+                        <source type="image/webp" srcset="avatar-540.webp 540w, avatar-800.webp 800w, avatar-1080.webp 1080w" sizes="(max-width: 767px) calc(100vw - 2rem), 60vw">
+                        <img src="avatar.jpg" width="1080" height="1080" alt="Retrato de César Contreras" fetchpriority="high" data-i18n-attr="alt: hero.portraitAlt">
+                    </picture>
+                </figure>
 
-                <div class="space-y-5 sm:space-y-6">
-                    <h1 class="max-w-3xl text-4xl font-bold tracking-[-0.05em] text-white lg:text-5xl xl:text-6xl" data-i18n="landing.heroTitle">Construimos sistemas que conectan IA, hardware y operación en el mundo real.</h1>
-                    <p class="max-w-2xl text-lg leading-8 text-slate-300 sm:text-xl" data-i18n="landing.heroBody">Desarrollamos software a medida, APIs, automatizaciones, dashboards y herramientas internas para equipos que necesitan resolver procesos reales y conectar sistemas sin complicarse de más.</p>
-                </div>
+                <div class="hero-copy">
+                    <p class="hero-role" data-i18n="hero.role">Líder técnico en Koda IA, KodaLift y Rental Depot</p>
+                    <h1 id="hero-title"><span>César</span><span>Contreras</span></h1>
+                    <p class="hero-summary" data-i18n="hero.summary">Construyo software, IA y herramientas para operación real. Aquí comparto artículos que vale la pena leer.</p>
 
-                <div class="flex flex-wrap gap-3">
-                    <a href="https://wa.me/528111253709?text=Hola%20C%C3%A9sar%2C%20quiero%20hablar%20sobre%20un%20proyecto%20con%20CERCO.DEV" class="button-primary" data-i18n="landing.heroPrimary">Hablemos por WhatsApp</a>
-                    <a href="#services" class="button-secondary" data-i18n="landing.heroSecondary">Ver servicios</a>
-                    <a href="#cases" class="button-secondary" data-i18n="landing.heroTertiary">Ver proyectos</a>
-                </div>
-            </div>
-        </section>
-
-        <section id="services" class="py-8 sm:py-10 lg:py-14">
-            <div class="section-heading">
-                <span class="eyebrow" data-i18n="landing.servicesBadge">Servicios</span>
-                <h2 class="section-title" data-i18n="landing.servicesTitle">Servicios pensados para empresas que necesitan resolver, integrar y escalar.</h2>
-                <p class="section-copy" data-i18n="landing.servicesIntro">Tomamos proyectos donde lo importante es destrabar la operación, conectar sistemas y construir herramientas que sí se usen.</p>
-            </div>
-
-            <div class="mt-8 grid gap-4 sm:gap-6 lg:grid-cols-3">
-                <article class="service-card">
-                    <p class="service-label" data-i18n="landing.serviceCustomWebLabel">Software a medida</p>
-                    <h3 class="service-title" data-i18n="landing.serviceCustomWebTitle">Desarrollo web a medida</h3>
-                    <p class="service-body" data-i18n="landing.serviceCustomWebBody">Aplicaciones web enfocadas en procesos reales, paneles operativos y flujos internos que necesitan estabilidad, claridad y control.</p>
-                </article>
-
-                <article class="service-card">
-                    <p class="service-label text-orange-300" data-i18n="landing.serviceIntegrationsLabel">Integraciones</p>
-                    <h3 class="service-title" data-i18n="landing.serviceIntegrationsTitle">Integración de APIs y sistemas empresariales</h3>
-                    <p class="service-body" data-i18n="landing.serviceIntegrationsBody">Conexión entre ERPs, CRMs, plataformas de pago, facturación, mensajería y herramientas internas para eliminar tareas manuales y errores de sincronización.</p>
-                </article>
-
-                <article class="service-card">
-                    <p class="service-label text-sky-300" data-i18n="landing.serviceAutomationLabel">Automatización</p>
-                    <h3 class="service-title" data-i18n="landing.serviceAutomationTitle">Automatización de procesos</h3>
-                    <p class="service-body" data-i18n="landing.serviceAutomationBody">Flujos automáticos para operación, seguimiento, notificaciones y validaciones que reducen trabajo repetitivo y mejoran la trazabilidad.</p>
-                </article>
-
-                <article class="service-card">
-                    <p class="service-label" data-i18n="landing.serviceDashboardsLabel">Herramientas internas</p>
-                    <h3 class="service-title" data-i18n="landing.serviceDashboardsTitle">Dashboards y herramientas internas</h3>
-                    <p class="service-body" data-i18n="landing.serviceDashboardsBody">Interfaces para monitorear operación, centralizar información y darle al equipo una vista útil para tomar decisiones y ejecutar mejor.</p>
-                </article>
-
-                <article class="service-card">
-                    <p class="service-label text-amber-300" data-i18n="landing.serviceSupportLabel">Continuidad</p>
-                    <h3 class="service-title" data-i18n="landing.serviceSupportTitle">Soporte, mantenimiento y despliegue</h3>
-                    <p class="service-body" data-i18n="landing.serviceSupportBody">Acompañamiento para lanzar, estabilizar y mantener soluciones en producción con seguimiento técnico directo y mejoras continuas.</p>
-                </article>
-
-                <article class="service-card">
-                    <p class="service-label text-emerald-300" data-i18n="landing.serviceLogisticsLabel">Hardware embebido</p>
-                    <h3 class="service-title" data-i18n="landing.serviceLogisticsTitle">Controladoras, firmware y edge computing</h3>
-                    <p class="service-body" data-i18n="landing.serviceLogisticsBody">Diseño y desarrollo de tarjetas controladoras, firmware y dispositivos de edge computing para proyectos que conectan software con operación física.</p>
-                </article>
-            </div>
-
-            <div class="mt-8 flex flex-wrap gap-3">
-                <a href="https://wa.me/528111253709?text=Hola%20C%C3%A9sar%2C%20quiero%20cotizar%20un%20servicio%20con%20CERCO.DEV" class="button-primary" data-i18n="landing.servicesCtaPrimary">Cuéntanos tu proyecto</a>
-                <a href="#cases" class="button-secondary" data-i18n="landing.servicesCtaSecondary">Ver casos</a>
-            </div>
-        </section>
-
-        <section id="cases" class="py-8 sm:py-10 lg:py-14">
-            <div class="section-heading">
-                <span class="eyebrow" data-i18n="landing.casesBadge">Casos</span>
-                <h2 class="section-title" data-i18n="landing.casesTitle">Proyectos convertidos en soluciones concretas.</h2>
-                <p class="section-copy" data-i18n="landing.casesIntro">Estos casos muestran el tipo de trabajo que hacemos: problemas operativos o técnicos resueltos con una solución a medida y un enfoque práctico.</p>
-            </div>
-
-            <div class="mt-8 grid gap-4 sm:gap-6 lg:grid-cols-3">
-                <article class="case-card">
-                    <p class="case-kicker" data-i18n="landing.caseForkliftKicker">Seguridad industrial</p>
-                    <h3 class="case-title" data-i18n="landing.caseForkliftTitle">Visión artificial y control físico para montacargas</h3>
-                    <p class="case-highlight" data-i18n="landing.caseForkliftHighlight">IA, video y control físico integrados para intervenir riesgos en campo.</p>
-                    <details class="case-details">
-                        <summary data-i18n="shared.caseDetailsToggle">Ver problema, solución y resultado</summary>
-                        <div class="case-detail-list">
-                            <p class="case-detail-item" data-i18n="landing.caseForkliftProblem">Problema: monitorear conductas de riesgo y actuar cuando la operación puede poner en peligro a personas o equipo.</p>
-                            <p class="case-detail-item" data-i18n="landing.caseForkliftSolution">Solución: integración de cámaras, DVR, modelos de IA y una controladora física capaz de intervenir el vehículo en condiciones críticas.</p>
-                            <p class="case-detail-item" data-i18n="landing.caseForkliftResult">Resultado: una solución diseñada para operar en campo, conectando software, hardware y lógica de seguridad en el mismo sistema.</p>
-                        </div>
-                    </details>
-                    <div class="case-tags">
-                        <span class="pill">Computer vision</span>
-                        <span class="pill">AI</span>
-                        <span class="pill">Hardware</span>
-                    </div>
-                </article>
-
-                <article class="case-card">
-                    <p class="case-kicker" data-i18n="landing.caseGateKicker">Acceso y automatización</p>
-                    <h3 class="case-title" data-i18n="landing.caseGateTitle">Controladoras para portones con WhatsApp y apps móviles</h3>
-                    <p class="case-highlight" data-i18n="landing.caseGateHighlight">Accesos automatizados con hardware propio, WhatsApp y apps móviles.</p>
-                    <details class="case-details">
-                        <summary data-i18n="shared.caseDetailsToggle">Ver problema, solución y resultado</summary>
-                        <div class="case-detail-list">
-                            <p class="case-detail-item" data-i18n="landing.caseGateProblem">Problema: habilitar accesos automatizados con una experiencia simple para usuarios y administradores.</p>
-                            <p class="case-detail-item" data-i18n="landing.caseGateSolution">Solución: tarjetas controladoras, lógica de eventos, integración con WhatsApp y aplicaciones móviles conectadas al sistema físico.</p>
-                            <p class="case-detail-item" data-i18n="landing.caseGateResult">Resultado: una solución más accesible para gestionar aperturas y automatizaciones sin depender de procesos manuales.</p>
-                        </div>
-                    </details>
-                    <div class="case-tags">
-                        <span class="pill">WhatsApp</span>
-                        <span class="pill">Mobile apps</span>
-                        <span class="pill">Embedded control</span>
-                    </div>
-                </article>
-
-                <article class="case-card">
-                    <p class="case-kicker" data-i18n="landing.caseBusinessKicker">Integraciones de negocio</p>
-                    <h3 class="case-title" data-i18n="landing.caseBusinessTitle">Facturación, pagos e integración de procesos</h3>
-                    <p class="case-highlight" data-i18n="landing.caseBusinessHighlight">Cobros, facturación y operación conectados en un flujo continuo.</p>
-                    <details class="case-details">
-                        <summary data-i18n="shared.caseDetailsToggle">Ver problema, solución y resultado</summary>
-                        <div class="case-detail-list">
-                            <p class="case-detail-item" data-i18n="landing.caseBusinessProblem">Problema: conectar cobros, facturación y flujos internos que suelen quedar repartidos entre plataformas separadas.</p>
-                            <p class="case-detail-item" data-i18n="landing.caseBusinessSolution">Solución: desarrollo de integraciones con Stripe, APIs del SAT y automatizaciones para sincronizar plataformas, usuarios y operación.</p>
-                            <p class="case-detail-item" data-i18n="landing.caseBusinessResult">Resultado: procesos más claros y menos fricción operativa en tareas críticas del negocio.</p>
-                        </div>
-                    </details>
-                    <div class="case-tags">
-                        <span class="pill">Stripe</span>
-                        <span class="pill">SAT APIs</span>
-                        <span class="pill">Automation</span>
-                    </div>
-                </article>
-            </div>
-
-        </section>
-
-        <section id="about" class="grid gap-4 py-8 sm:py-10 lg:grid-cols-[1.05fr_0.95fr] lg:py-14">
-            <article class="section-card p-6 sm:p-8">
-                <span class="eyebrow mb-5" data-i18n="landing.aboutBadge">Sobre CERCO.DEV</span>
-                <h2 class="text-3xl font-bold text-white" data-i18n="landing.aboutTitle">Somos una práctica de desarrollo fundada por César Contreras y enfocada en soluciones a medida.</h2>
-                <p class="mt-5 max-w-2xl text-lg leading-8 text-slate-200" data-i18n="landing.aboutSummary">Combinamos desarrollo full-stack, integraciones, automatización y criterio de producto para construir herramientas que resuelvan operación real.</p>
-            </article>
-
-            <aside class="section-card p-6 sm:p-8">
-                <span class="eyebrow mb-5" data-i18n="landing.capabilitiesBadge">Capacidades</span>
-                <p class="text-base leading-7 text-slate-300" data-i18n="landing.capabilitiesIntro">Cobertura técnica para llevar un proyecto de idea a producción.</p>
-                <ul class="mt-5 capability-chip-grid">
-                    <li class="capability-chip" data-i18n="landing.capabilityChip1">Frontend operativo</li>
-                    <li class="capability-chip" data-i18n="landing.capabilityChip2">APIs y backend</li>
-                    <li class="capability-chip" data-i18n="landing.capabilityChip3">Integraciones empresariales</li>
-                    <li class="capability-chip" data-i18n="landing.capabilityChip4">Automatización</li>
-                    <li class="capability-chip" data-i18n="landing.capabilityChip5">Dashboards internos</li>
-                    <li class="capability-chip" data-i18n="landing.capabilityChip6">Hardware embebido</li>
-                    <li class="capability-chip" data-i18n="landing.capabilityChip7">Datos y mensajería</li>
-                    <li class="capability-chip" data-i18n="landing.capabilityChip8">Despliegue y soporte</li>
-                </ul>
-            </aside>
-        </section>
-
-        <section id="contact" class="py-8 sm:py-10 lg:py-14">
-            <div class="section-heading">
-                <span class="eyebrow" data-i18n="shared.labelContact">Contacto</span>
-                <h2 class="section-title" data-i18n="landing.contactTitle">Hablemos de tu proyecto.</h2>
-                <p class="section-copy" data-i18n="landing.contactIntro">Si estás evaluando una herramienta interna, una integración, una automatización o un desarrollo a medida, platiquémoslo.</p>
-            </div>
-
-            <div class="mt-8 grid gap-4 sm:gap-6 lg:grid-cols-[1.05fr_0.95fr]">
-                <article class="section-card p-6 sm:p-8">
-                    <div class="space-y-4 text-base text-slate-200">
-                        <a href="https://wa.me/528111253709?text=Hola%20C%C3%A9sar%2C%20quiero%20contarte%20un%20proyecto%20para%20CERCO.DEV" class="contact-card contact-card-primary">
-                            <div>
-                                <div class="text-sm uppercase tracking-[0.14em] text-slate-300" data-i18n="landing.contactWhatsappLabel">WhatsApp</div>
-                                <div class="mt-1 text-xl font-semibold text-white" data-i18n="landing.contactWhatsappTitle">Hablemos por WhatsApp</div>
-                            </div>
-                            <p class="mt-3 leading-7 text-slate-200" data-i18n="landing.contactWhatsappBody">Cuéntanos qué quieres resolver y vemos cómo aterrizarlo.</p>
-                        </a>
-                        <a href="mailto:hi@cerco.dev" class="contact-card">
-                            <div class="text-sm uppercase tracking-[0.14em] text-slate-400">Email</div>
-                            <div class="mt-1 text-xl font-semibold text-white">hi@cerco.dev</div>
-                            <p class="mt-3 leading-7 text-slate-300" data-i18n="landing.contactEmailBody">Si prefieres mandar contexto, requerimientos o documentación primero, el correo también funciona.</p>
-                        </a>
-                    </div>
-                </article>
-
-                <aside class="section-card p-6 sm:p-8">
-                    <div class="space-y-5">
-                        <div>
-                            <p class="text-sm uppercase tracking-[0.16em] text-slate-400" data-i18n="landing.contactAvailabilityLabel">Base</p>
-                            <p class="mt-2 text-lg font-semibold text-white" data-i18n="landing.contactAvailabilityPlace">Monterrey, Nuevo León, México</p>
-                            <p class="mt-3 leading-7 text-slate-300" data-i18n="landing.contactAvailabilityBody">Trabajamos con empresas y equipos que prefieren trato directo, buena ejecución técnica y soluciones hechas a la medida de su operación.</p>
-                        </div>
-                        <div class="rounded-[1.4rem] border border-white/8 bg-slate-950/85 p-5">
-                            <p class="text-sm uppercase tracking-[0.16em] text-slate-400" data-i18n="landing.contactChecklistLabel">Podemos ayudar si buscas</p>
-                            <ul class="mt-3 space-y-3 text-base leading-7 text-slate-200">
-                                <li data-i18n="landing.contactChecklistItem1">Una herramienta interna que realmente le ayude a tu operación.</li>
-                                <li data-i18n="landing.contactChecklistItem2">Integrar sistemas o quitar trabajo manual con automatización.</li>
-                                <li data-i18n="landing.contactChecklistItem3">Trabajar directo con alguien técnico en un proyecto a medida.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </aside>
-            </div>
-        </section>
-
-        <section class="py-8 sm:py-10 lg:py-14">
-            <div class="hero-card hero-card-footer px-6 py-8 text-center sm:px-10 sm:py-10">
-                <p class="mx-auto max-w-3xl text-2xl font-bold text-white sm:text-4xl" data-i18n="shared.footerLead">Trabajamos mejor cuando hay que ordenar procesos, conectar sistemas y sacar una solución que de verdad le sirva al negocio.</p>
-                <div class="mt-6 flex flex-wrap justify-center gap-3">
-                    <a href="https://wa.me/528111253709?text=Hola%20C%C3%A9sar%2C%20quiero%20hablar%20sobre%20un%20proyecto%20con%20CERCO.DEV" class="button-primary" data-i18n="shared.footerWhatsapp">Hablemos por WhatsApp</a>
-                    <a href="mailto:hi@cerco.dev" class="button-secondary" data-i18n="shared.footerEmail">Escríbenos</a>
+                    <nav class="contact-links" aria-label="Enlaces de contacto" data-i18n-attr="aria-label: contacts.navigationLabel">
+                        <a class="contact-link contact-link-primary" href="mailto:hi@cerco.dev" data-i18n="contacts.email">Email</a>
+                        <a class="contact-link" href="https://wa.me/528111253709" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+                        <a class="contact-link" href="https://github.com/Darival" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    </nav>
                 </div>
             </div>
         </section>
+
+        <section id="articles" class="articles" aria-labelledby="articles-title" data-articles-section hidden>
+            <div class="site-shell articles-layout">
+                <header class="articles-heading">
+                    <h2 id="articles-title" data-i18n="articles.title">Artículos que recomiendo</h2>
+                    <p data-i18n="articles.intro">Enlaces que guardo y comparto con una nota breve.</p>
+                </header>
+
+                <ul class="article-list" data-articles-list></ul>
+            </div>
+        </section>
+
+        <template id="article-template">
+            <li class="article-row">
+                <a class="article-link" href="#" target="_blank" rel="noopener noreferrer">
+                    <div class="article-meta">
+                        <span data-article-source></span>
+                        <time data-article-date></time>
+                    </div>
+                    <h3 data-article-title>Artículo</h3>
+                    <p data-article-summary></p>
+                    <span class="article-action" data-article-action></span>
+                </a>
+            </li>
+        </template>
     </main>
+
+    <footer class="site-footer">
+        <div class="site-shell footer-inner">
+            <p>© <span data-current-year>2026</span> César Contreras</p>
+            <p>CERCO.DEV</p>
+        </div>
+    </footer>
 </body>
 
 </html>
