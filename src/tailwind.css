@@ -219,6 +219,15 @@
     line-height: 1.45;
   }
 
+  .hero-role a {
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+  }
+
+  .hero-role a:hover {
+    color: var(--accent-hover);
+  }
+
   .hero-copy h1 {
     margin: 0;
     font-family: "Newsreader Variable", Georgia, serif;

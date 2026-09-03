@@ -2,7 +2,7 @@ window.SITE_TRANSLATIONS = {
   es: {
     meta: {
       title: "César Contreras | Líder técnico",
-      description: "Líder técnico en Koda IA, KodaLift y Rental Depot. Software, IA y herramientas para operación real.",
+      description: "Líder técnico en Koda IA. Software, IA y herramientas para operación real.",
       socialImageAlt: "Retrato de César Contreras"
     },
     shared: {
@@ -10,7 +10,7 @@ window.SITE_TRANSLATIONS = {
       languageLabel: "Cambiar idioma"
     },
     hero: {
-      role: "Líder técnico en Koda IA, KodaLift y Rental Depot",
+      rolePrefix: "Líder técnico en",
       summary: "Construyo software, IA y herramientas para operación real. Aquí comparto artículos que vale la pena leer.",
       portraitAlt: "Retrato de César Contreras"
     },
@@ -27,7 +27,7 @@ window.SITE_TRANSLATIONS = {
   en: {
     meta: {
       title: "César Contreras | Technical lead",
-      description: "Technical lead at Koda IA, KodaLift, and Rental Depot. Software, AI, and tools for real-world operations.",
+      description: "Technical lead at Koda IA. Software, AI, and tools for real-world operations.",
       socialImageAlt: "Portrait of César Contreras"
     },
     shared: {
@@ -35,7 +35,7 @@ window.SITE_TRANSLATIONS = {
       languageLabel: "Change language"
     },
     hero: {
-      role: "Technical lead at Koda IA, KodaLift, and Rental Depot",
+      rolePrefix: "Technical lead at",
       summary: "I build software, AI, and tools for real operations. I also share articles worth reading.",
       portraitAlt: "Portrait of César Contreras"
     },
