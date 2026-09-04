@@ -11,7 +11,7 @@ window.SITE_TRANSLATIONS = {
     },
     hero: {
       rolePrefix: "Líder técnico en",
-      summary: "Construyo software, IA y herramientas para operación real. Aquí comparto artículos que vale la pena leer.",
+      summary: "Construyo software, IA y herramientas para operación real.",
       portraitAlt: "Retrato de César Contreras"
     },
     contacts: {
@@ -36,7 +36,7 @@ window.SITE_TRANSLATIONS = {
     },
     hero: {
       rolePrefix: "Technical lead at",
-      summary: "I build software, AI, and tools for real operations. I also share articles worth reading.",
+      summary: "I build software, AI, and tools for real operations.",
       portraitAlt: "Portrait of César Contreras"
     },
     contacts: {
