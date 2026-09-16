@@ -5,53 +5,53 @@
  */
 window.SITE_ARTICLES = [
   {
-    url: "https://openai.com/index/chatgpt-connects-health-records-and-healthcare-sources/",
-    title: "Healthcare organizations can now connect EHR and additional industry data to ChatGPT",
+    url: "https://openai.com/index/introducing-the-agents-api/",
+    title: "Introducing the Agents API",
     source: "OpenAI",
-    sharedAt: "2026-09-07",
+    sharedAt: "2026-09-15",
     summaries: {
-      es: "OpenAI conecta ChatGPT con expedientes Epic autorizados y nueve fuentes públicas de salud mediante un plugin de solo lectura. Es un buen ejemplo de IA aplicada con permisos, trazabilidad y contexto operativo real.",
-      en: "OpenAI connects ChatGPT to authorized Epic records and nine public healthcare sources through a read-only plugin. It is a useful example of applied AI with permissions, traceability, and real operational context."
+      es: "OpenAI abre en beta pública la infraestructura de agentes que usa Codex: sesiones duraderas, herramientas, subagentes y entornos administrados o propios detrás de una sola API. Es una base interesante para flujos que deben continuar durante horas o días.",
+      en: "OpenAI is opening the agent infrastructure behind Codex in public beta: durable sessions, tools, subagents, and managed or self-hosted environments behind one API. It is an interesting foundation for workflows that must continue for hours or days."
     }
   },
   {
-    url: "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/",
-    title: "Introducing Gemini 3.8 Flash and 3.8 Flash Cyber",
-    source: "Google DeepMind",
-    sharedAt: "2026-09-07",
+    url: "https://api-docs.deepseek.com/updates/",
+    title: "DeepSeek-V4.1-Flash Release",
+    source: "DeepSeek",
+    sharedAt: "2026-09-15",
     summaries: {
-      es: "Gemini 3.8 Flash mejora razonamiento, programación y tareas con agentes sin subir el precio introductorio de 3.7. La variante Cyber se concentra en detectar vulnerabilidades y automatizar parches para defensores autorizados.",
-      en: "Gemini 3.8 Flash improves reasoning, coding, and agentic work without raising 3.7's introductory price. The Cyber variant focuses on vulnerability discovery and automated patching for trusted defenders."
+      es: "DeepSeek V4.1 Flash estrena una arquitectura con comprensión visual nativa y pasa a ser el modelo del alias deepseek-flash. La actualización también reduce precios y detalla la transición de los identificadores V4 Flash anteriores.",
+      en: "DeepSeek V4.1 Flash introduces a new architecture with native visual understanding and becomes the model behind the deepseek-flash alias. The update also lowers prices and explains the transition from earlier V4 Flash model IDs."
     }
   },
   {
-    url: "https://www.edgeimpulse.com/blog/from-vibration-to-repair-an-edge-agentic-ai-conveyor-with-edge-impulse-uns-and-arduino-ventuno-q/",
-    title: "From Vibration to Repair: An Edge Agentic AI Conveyor with Edge Impulse, UNS, and Arduino VENTUNO Q",
-    source: "Edge Impulse",
-    sharedAt: "2026-09-07",
+    url: "https://developer.nvidia.com/blog/frontier-reasoning-reaches-the-edge-how-to-deploy-and-optimize-models-on-nvidia-jetson/",
+    title: "Frontier Reasoning Reaches the Edge: How to Deploy and Optimize Models on NVIDIA Jetson",
+    source: "NVIDIA Technical Blog",
+    sharedAt: "2026-09-15",
     summaries: {
-      es: "Un proyecto industrial completo: vibración, detección de anomalías, MQTT como Unified Namespace y un agente local que decide si abrir una reparación. La arquitectura híbrida SBC/MCU del VENTUNO Q lo vuelve especialmente útil para IoT de planta.",
-      en: "A complete industrial project combining vibration data, anomaly detection, MQTT as a Unified Namespace, and a local agent that decides whether to open a repair. The VENTUNO Q's hybrid SBC/MCU architecture makes it especially relevant to factory IoT."
+      es: "Una guía para ejecutar razonamiento y agentes junto a sensores y sistemas conectados con Jetson. Compara modelos compactos, cuantización NVFP4 y decodificación especulativa, con comandos de despliegue y mediciones por tipo de carga.",
+      en: "A guide to running reasoning and agents next to sensors and connected systems with Jetson. It compares compact models, NVFP4 quantization, and speculative decoding, with deployment commands and measurements by workload type."
     }
   },
   {
-    url: "https://aws.amazon.com/blogs/industries/building-a-production-ai-agent-on-aws-a-six-pillar-walkthrough/",
-    title: "Building a Production AI Agent on AWS: A Six-Pillar Walkthrough",
-    source: "AWS",
-    sharedAt: "2026-09-07",
+    url: "https://aws.amazon.com/blogs/compute/validating-multi-agent-decisions-with-step-functions-and-bedrock-agentcore/",
+    title: "Validating multi-agent decisions with Step Functions and Bedrock AgentCore",
+    source: "AWS Compute Blog",
+    sharedAt: "2026-09-15",
     summaries: {
-      es: "AWS recorre seis pilares para llevar un agente de inventario automotriz de demostración a producción: construir, probar, operar, asegurar, observar y gobernar. Destacan las evaluaciones, autorización de herramientas, métricas y límites de emergencia.",
-      en: "AWS walks an automotive inventory agent from demo to production through six pillars: build, test, run, secure, observe, and govern. The evaluation harness, tool authorization, operational metrics, and emergency controls stand out."
+      es: "Un patrón concreto para automatizar decisiones con agentes sin entregarles la acción final. Step Functions coordina el trabajo en paralelo, valida cada propuesta con código determinista, conserva auditoría y envía solo las excepciones a revisión humana.",
+      en: "A concrete pattern for automating decisions with agents without giving them the final action. Step Functions coordinates parallel work, validates each proposal with deterministic code, keeps an audit trail, and sends only exceptions for human review."
     }
   },
   {
-    url: "https://www.edgeimpulse.com/blog/from-pytorch-to-the-edge-getting-started-with-executorch-and-edge-impulse/",
-    title: "From PyTorch to the Edge: Getting Started with ExecuTorch and Edge Impulse",
-    source: "Edge Impulse",
-    sharedAt: "2026-09-07",
+    url: "https://developer.arm.com/community/arm-community-blogs/b/ai-blog/posts/scaling-on-device-ai-across-different-arm-backends-with-executorch",
+    title: "Scaling On-Device AI Across different Arm backends with ExecuTorch",
+    source: "Arm AI Blog",
+    sharedAt: "2026-09-15",
     summaries: {
-      es: "Una guía práctica para mantener modelos dentro del ecosistema PyTorch y exportarlos a dispositivos con ExecuTorch. Explica los bloques disponibles, los artefactos ONNX y PTE, tamaños reales y las limitaciones actuales en microcontroladores y NPU.",
-      en: "A practical guide to keeping models in the PyTorch ecosystem and exporting them to devices with ExecuTorch. It explains the available blocks, ONNX and PTE artifacts, real sizes, and current microcontroller and NPU limitations."
+      es: "Arm compara cinco rutas de ExecuTorch para llevar un mismo modelo a CPU, GPU y NPU, desde Cortex-A hasta Cortex-M y Ethos-U. La explicación de particionado, operadores no delegados y artefactos específicos por objetivo es especialmente práctica.",
+      en: "Arm compares five ExecuTorch paths for taking one model across CPUs, GPUs, and NPUs, from Cortex-A to Cortex-M and Ethos-U. Its explanation of partitioning, undelegated operators, and target-specific artifacts is especially practical."
     }
   }
 ];
