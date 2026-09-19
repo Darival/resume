@@ -65,8 +65,16 @@
         const url = typeof article.url === "string" ? article.url.trim() : "";
         const title = typeof article.title === "string" ? article.title.trim() : "";
         const source = typeof article.source === "string" ? article.source.trim() : "";
-        const sharedAt = typeof article.sharedAt === "string" ? article.sharedAt : "";
-        const dateValue = Date.parse(`${sharedAt}T12:00:00Z`);
+        const publishedAt = typeof article.publishedAt === "string" ? article.publishedAt : "";
+        const dateValue = /^\d{4}-\d{2}-\d{2}$/.test(publishedAt)
+          ? Date.parse(`${publishedAt}T12:00:00Z`)
+          : NaN;
+
+        // Reject impossible dates that Date.parse would normalize, such as February 30.
+        if (Number.isNaN(dateValue) || new Date(dateValue).toISOString().slice(0, 10) !== publishedAt) {
+          return null;
+        }
+
         let parsedUrl;
 
         try {
@@ -75,7 +83,7 @@
           return null;
         }
 
-        if (!title || !source || Number.isNaN(dateValue) || !["http:", "https:"].includes(parsedUrl.protocol)) {
+        if (!title || !source || !["http:", "https:"].includes(parsedUrl.protocol)) {
           return null;
         }
 
@@ -83,7 +91,7 @@
           url: parsedUrl.href,
           title,
           source,
-          sharedAt,
+          publishedAt,
           dateValue,
           summaries: article.summaries && typeof article.summaries === "object" ? article.summaries : {},
           index
@@ -135,8 +143,8 @@
       link.href = article.url;
       link.setAttribute("aria-label", `${article.title}. ${actionLabel}`);
       source.textContent = article.source;
-      date.dateTime = article.sharedAt;
-      date.textContent = formatDate(article.sharedAt, language);
+      date.dateTime = article.publishedAt;
+      date.textContent = formatDate(article.publishedAt, language);
       title.textContent = article.title;
       summary.textContent = localizedSummary;
       summary.hidden = localizedSummary.length === 0;
