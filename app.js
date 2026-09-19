@@ -2,6 +2,93 @@
   const root = document.documentElement;
   const translations = window.SITE_TRANSLATIONS || {};
   const supportedLanguages = ["es", "en"];
+  const motionPreference = window.matchMedia?.("(prefers-reduced-motion: reduce)");
+  const revealedItems = new Set();
+  const revealTargets = new Map();
+  let revealObserver = null;
+
+  function clearArticleReveals() {
+    revealObserver?.disconnect();
+    revealObserver = null;
+
+    revealTargets.forEach((_key, element) => {
+      element.classList.remove("scroll-reveal-pending", "scroll-reveal-enter");
+      element.style.removeProperty("--reveal-delay");
+    });
+    revealTargets.clear();
+  }
+
+  function revealItem(element, animate = false, delay = 0) {
+    const key = revealTargets.get(element);
+    if (!key) {
+      return;
+    }
+
+    revealedItems.add(key);
+    revealObserver?.unobserve(element);
+    element.classList.remove("scroll-reveal-pending");
+    element.classList.toggle("scroll-reveal-enter", animate);
+
+    if (animate) {
+      element.style.setProperty("--reveal-delay", `${delay}ms`);
+    } else {
+      element.style.removeProperty("--reveal-delay");
+    }
+  }
+
+  function observeArticleReveals() {
+    const section = document.querySelector("[data-articles-section]");
+    if (!section || section.hidden) {
+      return;
+    }
+
+    // Animate the heading itself so its sticky parent keeps its normal position.
+    const heading = section.querySelector(".articles-heading h2");
+    if (heading) {
+      revealTargets.set(heading, "heading:articles");
+    }
+    section.querySelectorAll(".article-row").forEach((row) => {
+      revealTargets.set(row, row.querySelector(".article-link").href);
+    });
+
+    if (!motionPreference || motionPreference.matches || !("IntersectionObserver" in window)) {
+      revealTargets.forEach((_key, element) => revealItem(element));
+      return;
+    }
+
+    try {
+      revealObserver = new IntersectionObserver((entries, observer) => {
+        if (observer !== revealObserver) {
+          return;
+        }
+
+        let articleIndex = 0;
+        entries
+          .filter((entry) => entry.isIntersecting && entry.intersectionRatio >= 0.1)
+          .sort((first, second) => first.boundingClientRect.top - second.boundingClientRect.top)
+          .forEach(({ target }) => {
+            if (revealedItems.has(revealTargets.get(target))) {
+              return;
+            }
+            const delay = target.matches(".article-row") ? Math.min(articleIndex++ * 70, 140) : 0;
+            revealItem(target, true, delay);
+          });
+      }, { threshold: 0.1 });
+
+      revealTargets.forEach((key, element) => {
+        if (revealedItems.has(key) || element.contains(document.activeElement)) {
+          revealItem(element);
+          return;
+        }
+        revealObserver.observe(element);
+        element.classList.add("scroll-reveal-pending");
+      });
+    } catch (_error) {
+      // Enhancement failures must never leave the article list hidden.
+      revealTargets.forEach((_key, element) => revealItem(element));
+      clearArticleReveals();
+    }
+  }
 
   function readSavedLanguage() {
     try {
@@ -120,6 +207,7 @@
     }
 
     const articles = getArticles();
+    clearArticleReveals();
     list.replaceChildren();
     section.hidden = articles.length === 0;
 
@@ -153,6 +241,7 @@
     });
 
     list.appendChild(fragment);
+    observeArticleReveals();
   }
 
   function applyLanguage(language) {
@@ -177,6 +266,25 @@
     if (button) {
       applyLanguage(button.dataset.lang);
     }
+  });
+
+  document.addEventListener("focusin", (event) => {
+    const row = event.target.closest(".article-row");
+    if (row) {
+      revealItem(row);
+    }
+  });
+
+  document.addEventListener("animationend", (event) => {
+    if (event.animationName === "article-reveal") {
+      event.target.classList.remove("scroll-reveal-enter");
+      event.target.style.removeProperty("--reveal-delay");
+    }
+  });
+
+  motionPreference?.addEventListener?.("change", () => {
+    clearArticleReveals();
+    observeArticleReveals();
   });
 
   document.querySelectorAll("[data-current-year]").forEach((element) => {
