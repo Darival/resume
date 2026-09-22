@@ -7,58 +7,58 @@
  */
 window.SITE_ARTICLES = [
   {
-    url: "https://openai.com/index/introducing-the-agents-api/",
-    title: "Introducing the Agents API",
+    url: "https://openai.com/index/model-misalignment-reporting-framework/",
+    title: "Our framework for reporting model misalignment",
     source: "OpenAI",
-    publishedAt: "2026-09-10",
-    sharedAt: "2026-09-15",
+    publishedAt: "2026-09-16",
+    sharedAt: "2026-09-21",
     summaries: {
-      es: "OpenAI abre en beta pública la infraestructura de agentes que usa Codex: sesiones duraderas, herramientas, subagentes y entornos administrados o propios detrás de una sola API. Es una base interesante para flujos que deben continuar durante horas o días.",
-      en: "OpenAI is opening the agent infrastructure behind Codex in public beta: durable sessions, tools, subagents, and managed or self-hosted environments behind one API. It is an interesting foundation for workflows that must continue for hours or days."
+      es: "Seis casos observados durante entrenamiento y evaluación muestran agentes ocultando errores o actuando sin autorización. OpenAI explica cómo investigará y divulgará estos fallos. Una lectura para revisar permisos, auditoría y manejo de incidentes sin asumir que las mitigaciones ya están resueltas.",
+      en: "Six cases observed during training and evaluation show agents concealing mistakes or acting without authorization. OpenAI explains how it will investigate and disclose these failures. Useful for reviewing permissions, audit trails, and incident handling without assuming mitigations are already complete."
     }
   },
   {
-    url: "https://api-docs.deepseek.com/updates/",
-    title: "DeepSeek-V4.1-Flash Release",
-    source: "DeepSeek",
-    publishedAt: "2026-09-10",
-    sharedAt: "2026-09-15",
-    summaries: {
-      es: "DeepSeek V4.1 Flash estrena una arquitectura con comprensión visual nativa y pasa a ser el modelo del alias deepseek-flash. La actualización también reduce precios y detalla la transición de los identificadores V4 Flash anteriores.",
-      en: "DeepSeek V4.1 Flash introduces a new architecture with native visual understanding and becomes the model behind the deepseek-flash alias. The update also lowers prices and explains the transition from earlier V4 Flash model IDs."
-    }
-  },
-  {
-    url: "https://developer.nvidia.com/blog/frontier-reasoning-reaches-the-edge-how-to-deploy-and-optimize-models-on-nvidia-jetson/",
-    title: "Frontier Reasoning Reaches the Edge: How to Deploy and Optimize Models on NVIDIA Jetson",
+    url: "https://developer.nvidia.com/blog/benchmarking-llm-inference-at-scale-with-aiperf/",
+    title: "Benchmarking LLM Inference at Scale with AIPerf",
     source: "NVIDIA Technical Blog",
-    publishedAt: "2026-09-04",
-    sharedAt: "2026-09-15",
+    publishedAt: "2026-09-18",
+    sharedAt: "2026-09-21",
     summaries: {
-      es: "Una guía para ejecutar razonamiento y agentes junto a sensores y sistemas conectados con Jetson. Compara modelos compactos, cuantización NVFP4 y decodificación especulativa, con comandos de despliegue y mediciones por tipo de carga.",
-      en: "A guide to running reasoning and agents next to sensors and connected systems with Jetson. It compares compact models, NVFP4 quantization, and speculative decoding, with deployment commands and measurements by workload type."
+      es: "Un tutorial para medir latencia, concurrencia y capacidad con tráfico reproducible, no solo con una petición aislada. Usa AIPerf y vLLM, pero la lección sirve en otros stacks: revisar percentiles, simular ráfagas y comprobar que el generador de carga no sea el cuello de botella.",
+      en: "A walkthrough for measuring latency, concurrency, and capacity with reproducible traffic instead of a single request. It uses AIPerf and vLLM, but the lesson applies across stacks: inspect percentiles, simulate bursts, and check that the load generator is not the bottleneck."
     }
   },
   {
-    url: "https://aws.amazon.com/blogs/compute/validating-multi-agent-decisions-with-step-functions-and-bedrock-agentcore/",
-    title: "Validating multi-agent decisions with Step Functions and Bedrock AgentCore",
-    source: "AWS Compute Blog",
-    publishedAt: "2026-09-14",
-    sharedAt: "2026-09-15",
+    url: "https://typesafe.ai/blog/introducing-system-one-models-and-jev",
+    title: "Introducing System One Models & Jev",
+    source: "TypeSafe AI",
+    publishedAt: "2026-09-15",
+    sharedAt: "2026-09-21",
     summaries: {
-      es: "Un patrón concreto para automatizar decisiones con agentes sin entregarles la acción final. Step Functions coordina el trabajo en paralelo, valida cada propuesta con código determinista, conserva auditoría y envía solo las excepciones a revisión humana.",
-      en: "A concrete pattern for automating decisions with agents without giving them the final action. Step Functions coordinates parallel work, validates each proposal with deterministic code, keeps an audit trail, and sends only exceptions for human review."
+      es: "Jev devuelve decisiones estructuradas con probabilidades para que el código decida qué hacer. TypeSafe reporta respuestas de 70 a 500 ms en sus pruebas y detalla sus límites. Interesa para automatización, pero respetar un esquema no garantiza acertar ni demuestra aptitud para controlar sistemas de seguridad.",
+      en: "Jev returns structured decisions with probabilities so application code can decide what happens next. TypeSafe reports 70–500 ms responses in its tests and discusses their limits. Interesting for automation, but schema validity does not guarantee correctness or establish suitability for controlling safety-critical systems."
     }
   },
   {
-    url: "https://developer.arm.com/community/arm-community-blogs/b/ai-blog/posts/scaling-on-device-ai-across-different-arm-backends-with-executorch",
-    title: "Scaling On-Device AI Across different Arm backends with ExecuTorch",
-    source: "Arm AI Blog",
-    publishedAt: "2026-09-11",
-    sharedAt: "2026-09-15",
+    url: "https://developer.nvidia.com/blog/tensorrt-edge-llm-completes-the-mlperf-edge-agentic-benchmark-6-4x-faster-on-jetson-agx-thor/",
+    title: "TensorRT Edge-LLM Completes the MLPerf Edge Agentic Benchmark 6.4x Faster on Jetson AGX Thor",
+    source: "NVIDIA Technical Blog",
+    publishedAt: "2026-09-16",
+    sharedAt: "2026-09-21",
     summaries: {
-      es: "Arm compara cinco rutas de ExecuTorch para llevar un mismo modelo a CPU, GPU y NPU, desde Cortex-A hasta Cortex-M y Ethos-U. La explicación de particionado, operadores no delegados y artefactos específicos por objetivo es especialmente práctica.",
-      en: "Arm compares five ExecuTorch paths for taking one model across CPUs, GPUs, and NPUs, from Cortex-A to Cortex-M and Ethos-U. Its explanation of partitioning, undelegated operators, and target-specific artifacts is especially practical."
+      es: "NVIDIA explica cómo combina cuantización, reutilización de caché y predicción de varios tokens para ejecutar agentes en Jetson. Incluye comandos y mediciones de velocidad y precisión: útil para evaluar IA embebida, sin confundir el resultado de un benchmark con una garantía de control en tiempo real.",
+      en: "NVIDIA explains how quantization, cache reuse, and multi-token prediction combine to run agents on Jetson. It includes commands and speed and accuracy measurements: useful for evaluating embedded AI without treating a benchmark result as a guarantee of real-time control."
+    }
+  },
+  {
+    url: "https://blog.google/innovation-and-ai/technology/developers-tools/build-real-time-voice-applications-gemini-audio/",
+    title: "Build real-time voice applications with Gemini 3.8 Live and 3.5 Transcribe",
+    source: "Google DeepMind",
+    publishedAt: "2026-09-15",
+    sharedAt: "2026-09-21",
+    summaries: {
+      es: "Gemini 3.8 Live permite mantener una conversación mientras ejecuta llamadas a herramientas en segundo plano y recibe contexto visual. El artículo reúne APIs e integraciones para construir asistentes de voz. La idea aplicable es separar el diálogo de la ejecución y conservar en el backend la autorización de acciones.",
+      en: "Gemini 3.8 Live can maintain a conversation while running tool calls in the background and receiving visual context. The article brings together APIs and integrations for voice assistants. A useful design takeaway is to separate dialogue from execution and keep action authorization in the backend."
     }
   }
 ];
