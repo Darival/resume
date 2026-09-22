@@ -15,8 +15,7 @@ window.SITE_TRANSLATIONS = {
       portraitAlt: "Retrato pixel art de César Contreras"
     },
     contacts: {
-      navigationLabel: "Enlaces de contacto",
-      email: "Email"
+      navigationLabel: "Enlaces de contacto"
     },
     articles: {
       title: "Artículos que recomiendo",
@@ -40,8 +39,7 @@ window.SITE_TRANSLATIONS = {
       portraitAlt: "Pixel art portrait of César Contreras"
     },
     contacts: {
-      navigationLabel: "Contact links",
-      email: "Email"
+      navigationLabel: "Contact links"
     },
     articles: {
       title: "Articles I recommend",
