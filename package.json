@@ -4,14 +4,21 @@
   "private": true,
   "scripts": {
     "dev": "concurrently \"npm:watch:css\" \"npm:serve\"",
+    "build": "npm run build:vendor && npm run build:css",
+    "build:vendor": "node scripts/prepare-vendor.mjs",
+    "images:optimize": "node scripts/optimize-article-images.mjs",
+    "check:articles": "node scripts/check-articles.mjs",
     "build:css": "tailwindcss -i ./src/tailwind.css -o ./style.css --minify",
     "watch:css": "tailwindcss -i ./src/tailwind.css -o ./style.css --watch",
-    "serve": "serve . -l 4173"
+    "serve": "npm run build:vendor && serve . -l 4173"
   },
   "devDependencies": {
     "@tailwindcss/cli": "^4.1.0",
     "concurrently": "^9.1.2",
     "serve": "^14.2.4",
     "tailwindcss": "^4.1.0"
+  },
+  "dependencies": {
+    "gsap": "3.15.0"
   }
 }

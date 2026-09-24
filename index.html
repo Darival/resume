@@ -30,10 +30,13 @@
     <link rel="shortcut icon" href="favicon.svg">
     <link rel="preload" href="fonts/manrope-latin-variable.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/newsreader-latin-variable.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="avatar-pixel-800.webp" as="image" type="image/webp" imagesrcset="avatar-pixel-400.webp 400w, avatar-pixel-800.webp 800w, avatar-pixel-1254.webp 1254w" imagesizes="(max-width: 767px) and (max-height: 620px) min(calc(100vw - 2rem), 11rem), (max-width: 767px) min(calc(100vw - 2rem), 20rem, 38svh), min(calc(47.5vw - 1.25rem), 36rem, 70dvh)" fetchpriority="high">
+    <link rel="preload" href="avatar-pixel-800.webp" as="image" type="image/webp" imagesrcset="avatar-pixel-400.webp 400w, avatar-pixel-600.webp 600w, avatar-pixel-800.webp 800w, avatar-pixel-1254.webp 1254w" imagesizes="(max-width: 767px) and (max-height: 620px) min(calc(100vw - 2rem), 11rem), (max-width: 767px) min(calc(100vw - 2rem), 20rem, 38svh), min(calc(47.5vw - 1.25rem), 36rem, 70dvh)" fetchpriority="high">
     <link rel="stylesheet" href="style.css">
     <script src="translations.js" defer></script>
     <script src="articles.js" defer></script>
+    <script src="assets/vendor/gsap.min.js" defer></script>
+    <script src="assets/vendor/ScrollTrigger.min.js" defer></script>
+    <script src="motion.js" defer></script>
     <script src="app.js" defer></script>
 </head>
 
@@ -56,7 +59,7 @@
             <div class="site-shell hero-layout">
                 <figure class="hero-media">
                     <picture>
-                        <source type="image/webp" srcset="avatar-pixel-400.webp 400w, avatar-pixel-800.webp 800w, avatar-pixel-1254.webp 1254w" sizes="(max-width: 767px) and (max-height: 620px) min(calc(100vw - 2rem), 11rem), (max-width: 767px) min(calc(100vw - 2rem), 20rem, 38svh), min(calc(47.5vw - 1.25rem), 36rem, 70dvh)">
+                        <source type="image/webp" srcset="avatar-pixel-400.webp 400w, avatar-pixel-600.webp 600w, avatar-pixel-800.webp 800w, avatar-pixel-1254.webp 1254w" sizes="(max-width: 767px) and (max-height: 620px) min(calc(100vw - 2rem), 11rem), (max-width: 767px) min(calc(100vw - 2rem), 20rem, 38svh), min(calc(47.5vw - 1.25rem), 36rem, 70dvh)">
                         <img src="avatar-pixel.png" width="1254" height="1254" alt="Retrato pixel art de César Contreras" fetchpriority="high" data-i18n-attr="alt: hero.portraitAlt">
                     </picture>
                 </figure>
@@ -75,10 +78,9 @@
         </section>
 
         <section id="articles" class="articles" aria-labelledby="articles-title" data-articles-section hidden>
-            <div class="site-shell articles-layout">
+            <div class="site-shell">
                 <header class="articles-heading">
                     <h2 id="articles-title" data-i18n="articles.title">Artículos que recomiendo</h2>
-                    <p data-i18n="articles.intro">Enlaces que guardo y comparto con una nota breve.</p>
                 </header>
 
                 <ul class="article-list" data-articles-list></ul>
@@ -88,13 +90,18 @@
         <template id="article-template">
             <li class="article-row">
                 <a class="article-link" href="#" target="_blank" rel="noopener noreferrer">
-                    <div class="article-meta">
-                        <span data-article-source></span>
-                        <time data-article-date></time>
+                    <div class="article-copy">
+                        <div class="article-meta">
+                            <span data-article-source></span>
+                            <time data-article-date></time>
+                        </div>
+                        <h3 data-article-title>Artículo</h3>
+                        <p data-article-summary></p>
+                        <span class="article-action" data-article-action></span>
                     </div>
-                    <h3 data-article-title>Artículo</h3>
-                    <p data-article-summary></p>
-                    <span class="article-action" data-article-action></span>
+                    <figure class="article-visual" data-article-visual hidden>
+                        <img width="1280" height="960" loading="lazy" decoding="async" alt="">
+                    </figure>
                 </a>
             </li>
         </template>

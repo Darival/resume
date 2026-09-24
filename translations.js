@@ -19,7 +19,6 @@ window.SITE_TRANSLATIONS = {
     },
     articles: {
       title: "Artículos que recomiendo",
-      intro: "Enlaces que guardo y comparto con una nota breve.",
       open: "Abrir artículo"
     }
   },
@@ -43,7 +42,6 @@ window.SITE_TRANSLATIONS = {
     },
     articles: {
       title: "Articles I recommend",
-      intro: "Links I save and share with a short note.",
       open: "Open article"
     }
   }

@@ -300,61 +300,77 @@
     padding-block: clamp(4.5rem, 9vw, 8.5rem);
   }
 
-  .articles-layout {
-    display: grid;
-    grid-template-columns: minmax(15rem, 0.72fr) minmax(0, 1.28fr);
-    align-items: start;
-    gap: clamp(3rem, 9vw, 9rem);
-  }
-
   .articles-heading {
-    position: sticky;
-    top: 2rem;
+    margin-bottom: clamp(2.5rem, 6vw, 5.5rem);
   }
 
   .articles-heading h2 {
-    max-width: 10ch;
+    max-width: 15ch;
     margin: 0;
     font-family: "Newsreader Variable", Georgia, serif;
-    font-size: clamp(3.25rem, 5vw, 5.6rem);
+    font-size: clamp(3.25rem, 6.4vw, 6.4rem);
     font-variation-settings: "wght" 570;
     font-weight: 570;
     letter-spacing: -0.06em;
-    line-height: 0.9;
-  }
-
-  .articles-heading p {
-    max-width: 30rem;
-    margin: 1.5rem 0 0;
-    color: var(--muted);
-    font-size: 1rem;
-    line-height: 1.65;
+    line-height: 0.95;
   }
 
   .article-list {
+    min-width: 0;
     margin: 0;
     padding: 0;
-    border-top: 1px solid var(--line);
     list-style: none;
   }
 
-  .article-row {
-    border-bottom: 1px solid var(--line);
+  .article-row + .article-row {
+    border-top: 1px solid var(--line);
   }
 
   .article-link {
-    display: block;
-    padding-block: clamp(1.7rem, 3vw, 2.6rem);
-    transition: color 180ms ease, transform 180ms ease;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    column-gap: clamp(1rem, 3vw, 2rem);
+    padding-block: clamp(2rem, 4vw, 3.5rem);
+    transition: color 180ms ease;
+  }
+
+  .article-link:has(.article-visual:not([hidden])) {
+    grid-template-columns: 10rem minmax(0, 1fr);
+  }
+
+  .article-row:first-child .article-link {
+    padding-top: 0;
   }
 
   .article-link:hover {
     color: var(--accent-hover);
-    transform: translateX(0.35rem);
   }
 
-  .article-link:active {
-    transform: translateX(0.2rem) translateY(1px);
+  .article-visual {
+    grid-column: 1;
+    grid-row: 1 / 5;
+    align-self: start;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    margin: 0;
+    background: #071412;
+  }
+
+  .article-visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    image-rendering: pixelated;
+  }
+
+  .article-copy {
+    display: contents;
+  }
+
+  .article-copy > * {
+    grid-column: -2 / -1;
+    min-width: 0;
   }
 
   .article-meta {
@@ -377,7 +393,7 @@
     line-height: 1.12;
   }
 
-  .article-link > p {
+  .article-copy > p {
     max-width: 62ch;
     margin: 0.85rem 0 0;
     color: var(--muted);
@@ -388,6 +404,8 @@
   .article-action {
     display: inline-block;
     margin-top: 1.1rem;
+    text-decoration: underline;
+    text-underline-offset: 0.3em;
     color: var(--accent);
     font-size: 0.83rem;
     font-weight: 800;
@@ -413,6 +431,12 @@
   }
 }
 
+@media (max-width: 1023px) {
+  .article-link:has(.article-visual:not([hidden])) {
+    grid-template-columns: 9rem minmax(0, 1fr);
+  }
+}
+
 @media (max-width: 767px) {
   .hero-layout {
     min-height: calc(100dvh - 4.5rem);
@@ -429,15 +453,6 @@
 
   .hero-copy h1 {
     font-size: clamp(4.4rem, 15vw, 7.2rem);
-  }
-
-  .articles-layout {
-    grid-template-columns: 1fr;
-    gap: 3.25rem;
-  }
-
-  .articles-heading {
-    position: static;
   }
 
   .articles-heading h2 {
@@ -491,8 +506,21 @@
     padding-block: 4rem;
   }
 
-  .articles-layout {
-    gap: 2.5rem;
+  .article-link:has(.article-visual:not([hidden])) {
+    grid-template-columns: clamp(4.5rem, 22vw, 5.5rem) minmax(0, 1fr);
+  }
+
+  .article-visual {
+    grid-row: 1 / 3;
+  }
+
+  .article-copy > p,
+  .article-action {
+    grid-column: 1 / -1;
+  }
+
+  .article-link h3 {
+    font-size: clamp(1.35rem, 5.5vw, 1.6rem);
   }
 
   .articles-heading h2 {
@@ -511,40 +539,6 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  @supports (animation-timeline: view()) and (animation-range: exit 0% exit 100%) {
-    .hero {
-      view-timeline-name: --hero-scroll;
-      view-timeline-axis: block;
-    }
-
-    .hero-media picture {
-      animation: portrait-scroll 1s linear both;
-      animation-timeline: --hero-scroll;
-      animation-range: exit 0% exit 100%;
-    }
-
-    @media (max-width: 767px) {
-      .hero-media picture {
-        --portrait-scroll-distance: 16px;
-      }
-    }
-  }
-
-  .scroll-reveal-pending {
-    opacity: 0;
-    transform: translateY(16px);
-  }
-
-  .scroll-reveal-enter {
-    animation: article-reveal 550ms cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0ms) both;
-  }
-
-  .article-row:focus-within {
-    opacity: 1;
-    transform: none;
-    animation: none;
-  }
-
   .hero-media {
     animation: hero-enter 720ms cubic-bezier(0.16, 1, 0.3, 1) both;
   }
@@ -569,36 +563,12 @@
     animation-delay: 260ms;
   }
 
-  @keyframes portrait-scroll {
-    from {
-      transform: translateY(0);
-    }
-
-    to {
-      transform: translateY(var(--portrait-scroll-distance, 48px));
-    }
-  }
-
-  @keyframes article-reveal {
-    from {
-      opacity: 0;
-      transform: translateY(16px);
-    }
-
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
   @keyframes hero-enter {
     from {
-      opacity: 0;
       transform: translateY(1.25rem) scale(0.985);
     }
 
     to {
-      opacity: 1;
       transform: translateY(0) scale(1);
     }
   }

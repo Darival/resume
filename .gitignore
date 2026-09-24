@@ -1,4 +1,5 @@
 node_modules/
+assets/vendor/
 .DS_Store
 .playwright-mcp/
 npm-debug.log*

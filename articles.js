@@ -1,6 +1,6 @@
 /**
  * Add recommendations using this shape:
- * url, title, source, publishedAt, sharedAt, summaries.es, summaries.en.
+ * url, title, source, publishedAt, sharedAt, summaries.es, summaries.en, optional image { src, srcset, width, height, alt: { es, en } }.
  * publishedAt is the verified original publication date (YYYY-MM-DD).
  * sharedAt records when the link was shared here and is not displayed.
  * Keep the published title unchanged and write both summaries in your own words.
@@ -9,6 +9,13 @@ window.SITE_ARTICLES = [
   {
     url: "https://openai.com/index/model-misalignment-reporting-framework/",
     title: "Our framework for reporting model misalignment",
+    image: {
+      src: "assets/articles/2026-09-23/agent-audit-640.webp",
+      srcset: "assets/articles/2026-09-23/agent-audit-160.webp 160w, assets/articles/2026-09-23/agent-audit-320.webp 320w, assets/articles/2026-09-23/agent-audit-640.webp 640w",
+      width: 640,
+      height: 960,
+      alt: {"es": "Una lupa pixelada inspecciona un agente y su ruta de auditoría.", "en": "A pixelated magnifying glass inspects an agent and its audit trail."}
+    },
     source: "OpenAI",
     publishedAt: "2026-09-16",
     sharedAt: "2026-09-21",
@@ -20,6 +27,13 @@ window.SITE_ARTICLES = [
   {
     url: "https://developer.nvidia.com/blog/benchmarking-llm-inference-at-scale-with-aiperf/",
     title: "Benchmarking LLM Inference at Scale with AIPerf",
+    image: {
+      src: "assets/articles/2026-09-23/inference-flows-640.webp",
+      srcset: "assets/articles/2026-09-23/inference-flows-160.webp 160w, assets/articles/2026-09-23/inference-flows-320.webp 320w, assets/articles/2026-09-23/inference-flows-640.webp 640w",
+      width: 640,
+      height: 960,
+      alt: {"es": "Paquetes cuadrados atraviesan una torre de servidores en pixel art.", "en": "Square data packets travel through a pixel art server tower."}
+    },
     source: "NVIDIA Technical Blog",
     publishedAt: "2026-09-18",
     sharedAt: "2026-09-21",
@@ -31,6 +45,13 @@ window.SITE_ARTICLES = [
   {
     url: "https://typesafe.ai/blog/introducing-system-one-models-and-jev",
     title: "Introducing System One Models & Jev",
+    image: {
+      src: "assets/articles/2026-09-23/decision-paths-640.webp",
+      srcset: "assets/articles/2026-09-23/decision-paths-160.webp 160w, assets/articles/2026-09-23/decision-paths-320.webp 320w, assets/articles/2026-09-23/decision-paths-640.webp 640w",
+      width: 640,
+      height: 960,
+      alt: {"es": "Un árbol pixelado divide una entrada en tres rutas de decisión.", "en": "A pixelated tree divides one input into three decision paths."}
+    },
     source: "TypeSafe AI",
     publishedAt: "2026-09-15",
     sharedAt: "2026-09-21",
@@ -42,6 +63,13 @@ window.SITE_ARTICLES = [
   {
     url: "https://developer.nvidia.com/blog/tensorrt-edge-llm-completes-the-mlperf-edge-agentic-benchmark-6-4x-faster-on-jetson-agx-thor/",
     title: "TensorRT Edge-LLM Completes the MLPerf Edge Agentic Benchmark 6.4x Faster on Jetson AGX Thor",
+    image: {
+      src: "assets/articles/2026-09-23/edge-circuits-640.webp",
+      srcset: "assets/articles/2026-09-23/edge-circuits-160.webp 160w, assets/articles/2026-09-23/edge-circuits-320.webp 320w, assets/articles/2026-09-23/edge-circuits-640.webp 640w",
+      width: 640,
+      height: 960,
+      alt: {"es": "Una placa vertical con un procesador, memorias y un conector en pixel art.", "en": "A vertical circuit board with a processor, memory and a connector in pixel art."}
+    },
     source: "NVIDIA Technical Blog",
     publishedAt: "2026-09-16",
     sharedAt: "2026-09-21",
@@ -53,6 +81,13 @@ window.SITE_ARTICLES = [
   {
     url: "https://blog.google/innovation-and-ai/technology/developers-tools/build-real-time-voice-applications-gemini-audio/",
     title: "Build real-time voice applications with Gemini 3.8 Live and 3.5 Transcribe",
+    image: {
+      src: "assets/articles/2026-09-23/voice-tools-640.webp",
+      srcset: "assets/articles/2026-09-23/voice-tools-160.webp 160w, assets/articles/2026-09-23/voice-tools-320.webp 320w, assets/articles/2026-09-23/voice-tools-640.webp 640w",
+      width: 640,
+      height: 960,
+      alt: {"es": "Un micrófono pixelado envía ondas de audio a dos herramientas conectadas.", "en": "A pixelated microphone sends audio waves to two connected tools."}
+    },
     source: "Google DeepMind",
     publishedAt: "2026-09-15",
     sharedAt: "2026-09-21",
