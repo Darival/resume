@@ -1,99 +1,110 @@
-/**
- * Add recommendations using this shape:
- * url, title, source, publishedAt, sharedAt, summaries.es, summaries.en, optional image { src, srcset, width, height, alt: { es, en } }.
- * publishedAt is the verified original publication date (YYYY-MM-DD).
- * sharedAt records when the link was shared here and is not displayed.
- * Keep the published title unchanged and write both summaries in your own words.
- */
+// Weekly editorial selection. Dates and summaries are plain text.
+// publishedAt: verified original date; sharedAt: date shared on CERCO.DEV.
+// Images are optional; every referenced asset must exist in assets/articles/.
 window.SITE_ARTICLES = [
   {
-    url: "https://openai.com/index/model-misalignment-reporting-framework/",
-    title: "Our framework for reporting model misalignment",
-    image: {
-      src: "assets/articles/2026-09-23/agent-audit-640.webp",
-      srcset: "assets/articles/2026-09-23/agent-audit-160.webp 160w, assets/articles/2026-09-23/agent-audit-320.webp 320w, assets/articles/2026-09-23/agent-audit-640.webp 640w",
-      width: 640,
-      height: 960,
-      alt: {"es": "Una lupa pixelada inspecciona un agente y su ruta de auditoría.", "en": "A pixelated magnifying glass inspects an agent and its audit trail."}
+    "url": "https://aws.amazon.com/blogs/publicsector/controlling-delegation-in-agentic-ai-with-amazon-bedrock-agent-core/",
+    "title": "Controlling delegation in agentic AI with Amazon Bedrock Agent Core",
+    "source": "AWS",
+    "publishedAt": "2026-09-25",
+    "sharedAt": "2026-09-28",
+    "summaries": {
+      "es": "Una forma útil de revisar agentes: identificar dónde delegan confianza, acciones y acceso a datos. Aunque parte de AWS, el criterio sirve en cualquier stack: verificar permisos fuera del modelo y probar las consecuencias de una inyección, no solo la respuesta que escribe.",
+      "en": "A useful way to review agents: identify where they delegate trust, actions and data access. Although framed around AWS, the principle applies to any stack: enforce permissions outside the model and test what an injection actually changes, not just the text it produces."
     },
-    source: "OpenAI",
-    publishedAt: "2026-09-16",
-    sharedAt: "2026-09-21",
-    summaries: {
-      es: "Seis casos observados durante entrenamiento y evaluación muestran agentes ocultando errores o actuando sin autorización. OpenAI explica cómo investigará y divulgará estos fallos. Una lectura para revisar permisos, auditoría y manejo de incidentes sin asumir que las mitigaciones ya están resueltas.",
-      en: "Six cases observed during training and evaluation show agents concealing mistakes or acting without authorization. OpenAI explains how it will investigate and disclose these failures. Useful for reviewing permissions, audit trails, and incident handling without assuming mitigations are already complete."
+    "image": {
+      "src": "assets/articles/2026-09-28/delegation-lock-640.webp",
+      "srcset": "assets/articles/2026-09-28/delegation-lock-160.webp 160w, assets/articles/2026-09-28/delegation-lock-320.webp 320w, assets/articles/2026-09-28/delegation-lock-640.webp 640w",
+      "width": 640,
+      "height": 960,
+      "alt": {
+        "es": "Candado con tres conectores que representan permisos de acceso.",
+        "en": "Padlock with three connectors representing access permissions."
+      }
     }
   },
   {
-    url: "https://developer.nvidia.com/blog/benchmarking-llm-inference-at-scale-with-aiperf/",
-    title: "Benchmarking LLM Inference at Scale with AIPerf",
-    image: {
-      src: "assets/articles/2026-09-23/inference-flows-640.webp",
-      srcset: "assets/articles/2026-09-23/inference-flows-160.webp 160w, assets/articles/2026-09-23/inference-flows-320.webp 320w, assets/articles/2026-09-23/inference-flows-640.webp 640w",
-      width: 640,
-      height: 960,
-      alt: {"es": "Paquetes cuadrados atraviesan una torre de servidores en pixel art.", "en": "Square data packets travel through a pixel art server tower."}
+    "url": "https://developers.googleblog.com/introducing-support-for-local-ai-models-in-the-antigravity-sdk/",
+    "title": "Introducing Support for Local AI Models in the Antigravity SDK",
+    "source": "Google for Developers",
+    "publishedAt": "2026-09-23",
+    "sharedAt": "2026-09-28",
+    "summaries": {
+      "es": "Ejemplos en Python para ejecutar agentes locales con Gemma y LiteRT, o combinar un planificador en la nube con trabajo en el equipo. Enseña a separar qué datos salen del dispositivo. Recomienda más de 24 GB de memoria; los permisos abiertos del ejemplo requieren revisión antes de producción.",
+      "en": "Python examples for local agents using Gemma and LiteRT, or a cloud planner coordinating on-device work. A useful pattern for deciding which data leaves the machine. The guide recommends over 24 GB of memory; its permissive example policies need review before production."
     },
-    source: "NVIDIA Technical Blog",
-    publishedAt: "2026-09-18",
-    sharedAt: "2026-09-21",
-    summaries: {
-      es: "Un tutorial para medir latencia, concurrencia y capacidad con tráfico reproducible, no solo con una petición aislada. Usa AIPerf y vLLM, pero la lección sirve en otros stacks: revisar percentiles, simular ráfagas y comprobar que el generador de carga no sea el cuello de botella.",
-      en: "A walkthrough for measuring latency, concurrency, and capacity with reproducible traffic instead of a single request. It uses AIPerf and vLLM, but the lesson applies across stacks: inspect percentiles, simulate bursts, and check that the load generator is not the bottleneck."
+    "image": {
+      "src": "assets/articles/2026-09-28/local-workshop-640.webp",
+      "srcset": "assets/articles/2026-09-28/local-workshop-160.webp 160w, assets/articles/2026-09-28/local-workshop-320.webp 320w, assets/articles/2026-09-28/local-workshop-640.webp 640w",
+      "width": 640,
+      "height": 960,
+      "alt": {
+        "es": "Laptop con un chip y conexiones hacia una nube.",
+        "en": "Laptop with a chip and connections to a cloud."
+      }
     }
   },
   {
-    url: "https://typesafe.ai/blog/introducing-system-one-models-and-jev",
-    title: "Introducing System One Models & Jev",
-    image: {
-      src: "assets/articles/2026-09-23/decision-paths-640.webp",
-      srcset: "assets/articles/2026-09-23/decision-paths-160.webp 160w, assets/articles/2026-09-23/decision-paths-320.webp 320w, assets/articles/2026-09-23/decision-paths-640.webp 640w",
-      width: 640,
-      height: 960,
-      alt: {"es": "Un árbol pixelado divide una entrada en tres rutas de decisión.", "en": "A pixelated tree divides one input into three decision paths."}
+    "url": "https://developer.nvidia.com/blog/accelerating-a-ros-2-node-with-an-ai-agent-and-nvidia-isaac-ros/",
+    "title": "Accelerating a ROS 2 Node with an AI Agent and NVIDIA Isaac ROS",
+    "source": "NVIDIA",
+    "publishedAt": "2026-09-22",
+    "sharedAt": "2026-09-28",
+    "summaries": {
+      "es": "Una guía con código para optimizar un nodo de percepción robótica sin cambiar sus mensajes ROS 2. Lo importante no es solo acelerar el modelo: también hay que medir las copias CPU–GPU, comprobar el transporte y conservar la ruta CPU cuando no se cumplen los requisitos de CUDA.",
+      "en": "A code-based guide to optimizing a robotic perception node without changing its ROS 2 messages. Faster inference is only part of the job: measure CPU–GPU copies, verify the transport and retain the CPU fallback when CUDA requirements are not met."
     },
-    source: "TypeSafe AI",
-    publishedAt: "2026-09-15",
-    sharedAt: "2026-09-21",
-    summaries: {
-      es: "Jev devuelve decisiones estructuradas con probabilidades para que el código decida qué hacer. TypeSafe reporta respuestas de 70 a 500 ms en sus pruebas y detalla sus límites. Interesa para automatización, pero respetar un esquema no garantiza acertar ni demuestra aptitud para controlar sistemas de seguridad.",
-      en: "Jev returns structured decisions with probabilities so application code can decide what happens next. TypeSafe reports 70–500 ms responses in its tests and discusses their limits. Interesting for automation, but schema validity does not guarantee correctness or establish suitability for controlling safety-critical systems."
+    "image": {
+      "src": "assets/articles/2026-09-28/robot-vision-640.webp",
+      "srcset": "assets/articles/2026-09-28/robot-vision-160.webp 160w, assets/articles/2026-09-28/robot-vision-320.webp 320w, assets/articles/2026-09-28/robot-vision-640.webp 640w",
+      "width": 640,
+      "height": 960,
+      "alt": {
+        "es": "Brazo robótico con cámara y un chip en su base.",
+        "en": "Robotic arm with a camera and a chip in its base."
+      }
     }
   },
   {
-    url: "https://developer.nvidia.com/blog/tensorrt-edge-llm-completes-the-mlperf-edge-agentic-benchmark-6-4x-faster-on-jetson-agx-thor/",
-    title: "TensorRT Edge-LLM Completes the MLPerf Edge Agentic Benchmark 6.4x Faster on Jetson AGX Thor",
-    image: {
-      src: "assets/articles/2026-09-23/edge-circuits-640.webp",
-      srcset: "assets/articles/2026-09-23/edge-circuits-160.webp 160w, assets/articles/2026-09-23/edge-circuits-320.webp 320w, assets/articles/2026-09-23/edge-circuits-640.webp 640w",
-      width: 640,
-      height: 960,
-      alt: {"es": "Una placa vertical con un procesador, memorias y un conector en pixel art.", "en": "A vertical circuit board with a processor, memory and a connector in pixel art."}
+    "url": "https://openai.com/index/better-prompt-caching-for-gpt-6/",
+    "title": "Better prompt caching for GPT‑6",
+    "source": "OpenAI",
+    "publishedAt": "2026-09-22",
+    "sharedAt": "2026-09-28",
+    "summaries": {
+      "es": "Cómo revisar por qué un agente pierde la caché y organizar instrucciones y herramientas para reutilizar contexto. Incluye diagnóstico, puntos de corte y precalentamiento. Los controles son propios de GPT-6; mantener estable el contexto compartido y medir los fallos de caché es una lección aplicable a otras integraciones.",
+      "en": "How to diagnose an agent's cache misses and arrange instructions and tools to reuse context. Covers diagnostics, breakpoints and prewarming. The controls are specific to GPT-6; keeping shared context stable and measuring cache misses is a useful lesson for other integrations too."
     },
-    source: "NVIDIA Technical Blog",
-    publishedAt: "2026-09-16",
-    sharedAt: "2026-09-21",
-    summaries: {
-      es: "NVIDIA explica cómo combina cuantización, reutilización de caché y predicción de varios tokens para ejecutar agentes en Jetson. Incluye comandos y mediciones de velocidad y precisión: útil para evaluar IA embebida, sin confundir el resultado de un benchmark con una garantía de control en tiempo real.",
-      en: "NVIDIA explains how quantization, cache reuse, and multi-token prediction combine to run agents on Jetson. It includes commands and speed and accuracy measurements: useful for evaluating embedded AI without treating a benchmark result as a guarantee of real-time control."
+    "image": {
+      "src": "assets/articles/2026-09-28/prompt-cache-640.webp",
+      "srcset": "assets/articles/2026-09-28/prompt-cache-160.webp 160w, assets/articles/2026-09-28/prompt-cache-320.webp 320w, assets/articles/2026-09-28/prompt-cache-640.webp 640w",
+      "width": 640,
+      "height": 960,
+      "alt": {
+        "es": "Módulos de memoria con un conducto de retorno.",
+        "en": "Memory modules with a return chute."
+      }
     }
   },
   {
-    url: "https://blog.google/innovation-and-ai/technology/developers-tools/build-real-time-voice-applications-gemini-audio/",
-    title: "Build real-time voice applications with Gemini 3.8 Live and 3.5 Transcribe",
-    image: {
-      src: "assets/articles/2026-09-23/voice-tools-640.webp",
-      srcset: "assets/articles/2026-09-23/voice-tools-160.webp 160w, assets/articles/2026-09-23/voice-tools-320.webp 320w, assets/articles/2026-09-23/voice-tools-640.webp 640w",
-      width: 640,
-      height: 960,
-      alt: {"es": "Un micrófono pixelado envía ondas de audio a dos herramientas conectadas.", "en": "A pixelated microphone sends audio waves to two connected tools."}
+    "url": "https://www.edgeimpulse.com/blog/qualcomm-technologies-first-risc-v-silicon-qcc744m-evk-supported-on-edge-impulse-and-zephyr/",
+    "title": "Qualcomm Technologies' First RISC-V Silicon: QCC744M-EVK, Supported on Edge Impulse and Zephyr",
+    "source": "Edge Impulse",
+    "publishedAt": "2026-09-21",
+    "sharedAt": "2026-09-28",
+    "summaries": {
+      "es": "Un recorrido de sensor a inferencia local con Zephyr: IMU por I2C, botones, LEDs y firmware abierto. Incluye compilación, flasheo y comandos para capturar datos y ejecutar el modelo. Una base concreta para experimentar con electrónica e IA, y adaptarla a otros sensores sin depender de la nube.",
+      "en": "A sensor-to-local-inference walkthrough with Zephyr: an I2C IMU, buttons, LEDs and open firmware. Includes building, flashing and commands for data collection and inference. A concrete starting point for experimenting with electronics and AI, then adapting it to other sensors without depending on the cloud."
     },
-    source: "Google DeepMind",
-    publishedAt: "2026-09-15",
-    sharedAt: "2026-09-21",
-    summaries: {
-      es: "Gemini 3.8 Live permite mantener una conversación mientras ejecuta llamadas a herramientas en segundo plano y recibe contexto visual. El artículo reúne APIs e integraciones para construir asistentes de voz. La idea aplicable es separar el diálogo de la ejecución y conservar en el backend la autorización de acciones.",
-      en: "Gemini 3.8 Live can maintain a conversation while running tool calls in the background and receiving visual context. The article brings together APIs and integrations for voice assistants. A useful design takeaway is to separate dialogue from execution and keep action authorization in the backend."
+    "image": {
+      "src": "assets/articles/2026-09-28/sensor-board-640.webp",
+      "srcset": "assets/articles/2026-09-28/sensor-board-160.webp 160w, assets/articles/2026-09-28/sensor-board-320.webp 320w, assets/articles/2026-09-28/sensor-board-640.webp 640w",
+      "width": 640,
+      "height": 960,
+      "alt": {
+        "es": "Sensor conectado a una placa con botones y luces.",
+        "en": "Sensor connected to a board with buttons and lights."
+      }
     }
   }
 ];
