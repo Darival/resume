@@ -3,107 +3,107 @@
 // Images are optional; every referenced asset must exist in assets/articles/.
 window.SITE_ARTICLES = [
   {
-    "url": "https://developer.nvidia.com/blog/build-local-ai-apps-with-c-and-nvidia-tensorrt-rtx-samples/",
-    "title": "Build Local AI Apps with C++ and NVIDIA TensorRT RTX Samples",
-    "source": "NVIDIA",
-    "publishedAt": "2026-10-01",
-    "summaries": {
-      "es": "Ejemplos en C++ para llevar modelos ONNX a aplicaciones locales de visión y transcripción. La separación entre exportar el modelo y ejecutar la aplicación es reutilizable; TensorRT RTX aporta la aceleración específica de NVIDIA. Incluye código y compilación para Windows, Linux y Arm64.",
-      "en": "C++ examples for turning ONNX models into local vision and transcription applications. Separating model export from application execution is reusable; TensorRT RTX supplies NVIDIA-specific acceleration. Includes code and build presets for Windows, Linux and Arm64."
-    },
-    "sharedAt": "2026-10-05",
-    "image": {
-      "src": "assets/articles/2026-10-05/native-inference-640.webp",
-      "srcset": "assets/articles/2026-10-05/native-inference-160.webp 160w, assets/articles/2026-10-05/native-inference-320.webp 320w, assets/articles/2026-10-05/native-inference-640.webp 640w",
-      "width": 640,
-      "height": 960,
-      "alt": {
-        "es": "Computadora con una hoja en pantalla conectada a un procesador.",
-        "en": "Computer displaying a leaf, connected to a processor."
-      }
-    }
-  },
-  {
-    "url": "https://aws.amazon.com/blogs/opensource/introducing-the-dogwood-local-engine-temporal-governance-for-agent-actions/",
-    "title": "Introducing the Dogwood Local Engine: temporal governance for agent actions",
-    "source": "AWS",
-    "publishedAt": "2026-09-30",
-    "summaries": {
-      "es": "Permisos que dependen de lo que el agente hizo antes: por ejemplo, permitir un push solo después de pruebas recientes y exitosas. El motor abierto conserva el historial tras reinicios. Se puede integrar fuera de AWS, pero tu aplicación debe bloquear las acciones denegadas y proteger el registro; la biblioteca no aísla al agente por sí sola.",
-      "en": "Permissions that depend on what an agent did earlier: for example, allowing a push only after recent successful tests. The open-source engine preserves history across restarts. It can be integrated outside AWS, but your application must block denied actions and protect the event log; the library does not isolate the agent by itself."
-    },
-    "sharedAt": "2026-10-05",
-    "image": {
-      "src": "assets/articles/2026-10-05/temporal-gate-640.webp",
-      "srcset": "assets/articles/2026-10-05/temporal-gate-160.webp 160w, assets/articles/2026-10-05/temporal-gate-320.webp 320w, assets/articles/2026-10-05/temporal-gate-640.webp 640w",
-      "width": 640,
-      "height": 960,
-      "alt": {
-        "es": "Reloj de arena sobre una barrera y tres bloques de historial.",
-        "en": "Hourglass above a barrier and three history blocks."
-      }
-    }
-  },
-  {
-    "url": "https://openai.com/index/devday-2026-recap/",
-    "title": "DevDay 2026 Recap",
+    "url": "https://openai.com/index/securing-our-frontier-model-training-environment/",
+    "title": "Securing our frontier model training environment",
     "source": "OpenAI",
-    "publishedAt": "2026-09-29",
+    "publishedAt": "2026-10-23",
     "summaries": {
-      "es": "Dentro del resumen de DevDay, destaca Decisions API: usar Luna para elegir entre respuestas predefinidas a partir de texto o imágenes, en vez de pedir una respuesta abierta. Es otra interfaz para clasificar y dirigir software. Se anunció en acceso limitado; el artículo no demuestra probabilidades calibradas ni garantías para controlar sistemas físicos.",
-      "en": "Within the DevDay recap, Decisions API stands out: using Luna to choose predefined answers from text or images instead of requesting an open-ended response. It offers another interface for classification and software routing. It was announced in limited preview; the article does not establish calibrated probabilities or guarantees for controlling physical systems."
+      "es": "OpenAI cuenta qué falló al contener modelos en entrenamiento y cómo reforzó sus defensas. La lección: probar también qué ocurre después de que un agente escapa de su entorno aislado, con controles de red, monitoreo y paradas automáticas independientes. Es un informe de sus pruebas internas, no una garantía de aislamiento perfecto.",
+      "en": "OpenAI describes containment failures during model training and the defenses it strengthened. The useful lesson: also test what happens after an agent escapes its sandbox, with independent network controls, monitoring and automatic stops. This reports internal testing, not a guarantee of perfect isolation."
     },
-    "sharedAt": "2026-10-05",
+    "sharedAt": "2026-10-26",
     "image": {
-      "src": "assets/articles/2026-10-05/finite-decisions-640.webp",
-      "srcset": "assets/articles/2026-10-05/finite-decisions-160.webp 160w, assets/articles/2026-10-05/finite-decisions-320.webp 320w, assets/articles/2026-10-05/finite-decisions-640.webp 640w",
+      "src": "assets/articles/2026-10-26/layered-containment-640.webp",
+      "srcset": "assets/articles/2026-10-26/layered-containment-160.webp 160w, assets/articles/2026-10-26/layered-containment-320.webp 320w, assets/articles/2026-10-26/layered-containment-640.webp 640w",
       "width": 640,
       "height": 960,
       "alt": {
-        "es": "Tolva con una palanca que dirige bloques hacia tres bandejas.",
-        "en": "Hopper with a lever routing blocks into three trays."
+        "es": "Procesador rodeado por barreras de contención y una palanca de corte.",
+        "en": "Processor surrounded by containment barriers and a shutoff lever."
       }
     }
   },
   {
-    "url": "https://developer.nvidia.com/blog/lower-the-cost-of-building-and-running-visual-ai-agents-with-nvidia-vss-blueprint-3-3/",
-    "title": "Lower the Cost of Building and Running Visual AI Agents with NVIDIA VSS Blueprint 3.3",
+    "url": "https://developer.nvidia.com/blog/using-ai-agents-to-teach-robots-like-microduck-to-walk-in-simulation/",
+    "title": "Using AI Agents to Teach Robots Like Microduck to Walk in Simulation",
     "source": "NVIDIA",
-    "publishedAt": "2026-09-29",
+    "publishedAt": "2026-10-23",
     "summaries": {
-      "es": "Cómo conectar cámaras RTSP, verificación de alertas, búsqueda y reportes sin duplicar servicios. VSS 3.3 también evita procesar partes del video que no cambian. El patrón sirve para monitoreo industrial, pero usa el stack de NVIDIA: hay que medir precisión y latencia con video propio. El derrame mostrado es una demo sintética, no una validación de seguridad.",
-      "en": "How to connect RTSP cameras, alert verification, search and reporting without duplicating services. VSS 3.3 also skips processing unchanged video regions. The pattern is useful for industrial monitoring but uses NVIDIA's stack: test accuracy and latency on your own footage. The illustrated spill is a synthetic demo, not a safety validation."
+      "es": "Recorre la creación de un circuito de obstáculos, el entrenamiento de locomoción y la evaluación de un robot en Isaac Sim e Isaac Lab. Lo más útil es separar entrenamiento de validación y medir caídas, colisiones y bloqueos. Antes de pasar al robot físico, hay que ajustar sensores, retardos y respuesta de los actuadores; ese despliegue queda fuera de la guía.",
+      "en": "Walks through obstacle-course creation, locomotion training and robot evaluation with Isaac Sim and Isaac Lab. The useful pattern is separating training from validation and measuring falls, collisions and stalls. Moving to physical hardware still requires matching sensors, delays and actuator behavior; that deployment is outside the guide's scope."
     },
-    "sharedAt": "2026-10-05",
+    "sharedAt": "2026-10-26",
     "image": {
-      "src": "assets/articles/2026-10-05/camera-events-640.webp",
-      "srcset": "assets/articles/2026-10-05/camera-events-160.webp 160w, assets/articles/2026-10-05/camera-events-320.webp 320w, assets/articles/2026-10-05/camera-events-640.webp 640w",
+      "src": "assets/articles/2026-10-26/robot-simulation-640.webp",
+      "srcset": "assets/articles/2026-10-26/robot-simulation-160.webp 160w, assets/articles/2026-10-26/robot-simulation-320.webp 320w, assets/articles/2026-10-26/robot-simulation-640.webp 640w",
       "width": 640,
       "height": 960,
       "alt": {
-        "es": "Cámara industrial observando botellas en una banda transportadora.",
-        "en": "Industrial camera watching bottles on a conveyor belt."
+        "es": "Robot bípedo con cámaras subiendo un escalón junto a una rampa.",
+        "en": "Bipedal camera-equipped robot stepping onto a block beside a ramp."
       }
     }
   },
   {
-    "url": "https://aws.amazon.com/blogs/industries/reduce-smt-defects-with-agentic-ai-automating-polarity-validation-on-aws/",
-    "title": "Reduce SMT Defects with Agentic AI: Automating Polarity Validation on AWS",
-    "source": "AWS",
-    "publishedAt": "2026-09-28",
+    "url": "https://openai.com/index/decisions-api/",
+    "title": "Build more responsive apps with the Decisions API",
+    "source": "OpenAI",
+    "publishedAt": "2026-10-22",
     "summaries": {
-      "es": "Un prototipo para extraer dimensiones y polaridad de fichas técnicas antes del montaje de componentes. Explica por qué falló buscar páginas similares y cómo ayudó aislar las vistas del dibujo. Aunque usa Textract y Bedrock, puedes trasladar el filtrado, la validación y las correcciones del ingeniero a otro stack. La confianza declarada por el modelo no garantiza una extracción correcta.",
-      "en": "A prototype for extracting dimensions and polarity from datasheets before component assembly. It explains why similar-page retrieval failed and how isolating drawing views helped. Although it uses Textract and Bedrock, filtering, validation and engineer corrections can transfer to another stack. A model's self-reported confidence does not guarantee a correct extraction."
+      "es": "La disponibilidad general añade entradas JSON, caché y hasta 400 preguntas por solicitud a Decisions API. Explica cómo usar probabilidades, opciones y puntuaciones en el flujo de una aplicación: una conexión clara con el enfoque de decisiones que me interesa de Jev. Las estimaciones deben evaluarse con casos propios; no sustituyen permisos ni controles de seguridad.",
+      "en": "General availability adds JSON inputs, caching and up to 400 questions per request to the Decisions API. It explains how probabilities, choices and scores fit into application logic—a clear connection to the decision-oriented approach I like in Jev. Evaluate estimates on your own cases; they do not replace permissions or safety controls."
     },
-    "sharedAt": "2026-10-05",
+    "sharedAt": "2026-10-26",
     "image": {
-      "src": "assets/articles/2026-10-05/component-inspection-640.webp",
-      "srcset": "assets/articles/2026-10-05/component-inspection-160.webp 160w, assets/articles/2026-10-05/component-inspection-320.webp 320w, assets/articles/2026-10-05/component-inspection-640.webp 640w",
+      "src": "assets/articles/2026-10-26/typed-decisions-640.webp",
+      "srcset": "assets/articles/2026-10-26/typed-decisions-160.webp 160w, assets/articles/2026-10-26/typed-decisions-320.webp 320w, assets/articles/2026-10-26/typed-decisions-640.webp 640w",
       "width": 640,
       "height": 960,
       "alt": {
-        "es": "Lupa sobre un diodo junto a una placa y una cinta de componentes.",
-        "en": "Magnifying glass over a diode beside a circuit board and component tape."
+        "es": "Selector electrónico con una perilla y tres conectores de formas distintas.",
+        "en": "Electronic selector with a rotary knob and three differently shaped connectors."
+      }
+    }
+  },
+  {
+    "url": "https://developers.googleblog.com/bringing-visual-graph-debugging-to-custom-edge-compilers-with-model-explorer/",
+    "title": "Bringing Visual Graph Debugging to Custom Edge Compilers with Model Explorer",
+    "source": "Google Developers",
+    "publishedAt": "2026-10-20",
+    "summaries": {
+      "es": "Arm muestra cómo inspeccionar un modelo después de compilarlo: encontrar operadores inesperados, comprobar qué llega a la NPU y localizar operaciones costosas. Incluye adaptadores abiertos para probarlo. Una lección práctica para IA en dispositivos: que el modelo funcione no significa que esté aprovechando el acelerador; las trazas de ciclos del ejemplo vienen de un simulador.",
+      "en": "Arm shows how to inspect a compiled model: find unexpected operators, check what reaches the NPU and locate expensive operations. Open adapters let you try the workflow. A practical edge-AI lesson: a working model may not be using its accelerator effectively; the example's cycle traces come from a simulator."
+    },
+    "sharedAt": "2026-10-26",
+    "image": {
+      "src": "assets/articles/2026-10-26/edge-debugging-640.webp",
+      "srcset": "assets/articles/2026-10-26/edge-debugging-160.webp 160w, assets/articles/2026-10-26/edge-debugging-320.webp 320w, assets/articles/2026-10-26/edge-debugging-640.webp 640w",
+      "width": 640,
+      "height": 960,
+      "alt": {
+        "es": "Lupa sobre una placa electrónica mostrando bloques de procesamiento conectados.",
+        "en": "Magnifying glass over a circuit board revealing connected processing blocks."
+      }
+    }
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/big-data/trace-security-threats-in-multi-agent-pipelines-with-amazon-opensearch-service/",
+    "title": "Trace security threats in multi-agent pipelines with Amazon OpenSearch Service",
+    "source": "AWS",
+    "publishedAt": "2026-10-19",
+    "summaries": {
+      "es": "Una demo con código para seguir una inyección de instrucciones entre agentes y detectar fugas entre clientes. Puedes trasladar a tu stack el registro del origen de cada dato y la autorización de herramientas basada en ese origen. Usa Bedrock y OpenSearch; sus detectores sencillos y resultados con datos ficticios no demuestran protección suficiente para producción.",
+      "en": "A code-backed demo traces prompt injection across agents and detects cross-tenant leaks. Data provenance and tool authorization based on that provenance are patterns you can take to your own stack. It uses Bedrock and OpenSearch; simple detectors and results on fictional data do not establish production-grade protection."
+    },
+    "sharedAt": "2026-10-26",
+    "image": {
+      "src": "assets/articles/2026-10-26/agent-provenance-640.webp",
+      "srcset": "assets/articles/2026-10-26/agent-provenance-160.webp 160w, assets/articles/2026-10-26/agent-provenance-320.webp 320w, assets/articles/2026-10-26/agent-provenance-640.webp 640w",
+      "width": 640,
+      "height": 960,
+      "alt": {
+        "es": "Cinta conectando bandejas de documentos hasta una compuerta cerrada.",
+        "en": "Ribbon connecting document trays to a closed gate."
       }
     }
   }
